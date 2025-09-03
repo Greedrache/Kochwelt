@@ -278,6 +278,18 @@ td{
 
 .infos{
     display: flex;
-    
     padding: 20px;
+}
+
+.ig {
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.portionen{
+    background-color: rgb(72, 170, 72);
+    border: none;
+    padding: 10px;
+    color: white;
 }
