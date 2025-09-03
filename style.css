@@ -267,3 +267,17 @@ td{
     padding: 15px;
     border-radius: 10px;
 }
+
+.icons {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+}
+
+.infos{
+    display: flex;
+    
+    padding: 20px;
+}
