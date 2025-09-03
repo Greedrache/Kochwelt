@@ -1,20 +1,20 @@
-header{
+header {
     display: flex;
     justify-content: space-around;
     align-items: end;
     top: 0;
     right: 0;
     left: 0;
-    box-shadow: 0px 4px 21px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.2);
 }
 
-body{
+body {
     margin: 0;
-     font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 
-.divlinkcontainer{
+.divlinkcontainer {
     text-decoration: none;
     margin-right: 100px;
     color: black;
@@ -23,7 +23,7 @@ body{
     font-weight: 700;
 }
 
-.divlink{
+.divlink {
     text-decoration: none;
     margin-right: 100px;
     color: black;
@@ -31,20 +31,22 @@ body{
     font-weight: 700;
     margin-right: 30px;
 }
-.divlink:hover{
+
+.divlink:hover {
     color: rgb(83, 165, 83);
     text-decoration: underline;
     text-decoration-thickness: 5px;
 }
 
-.logo{
+.logo {
     margin-left: 100px;
     padding: 30px;
+    height: 80px;
 }
 
 
 
-.lustaufwasneues{
+.lustaufwasneues {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@ body{
 
 }
 
-.maincontainerimg{
+.maincontainerimg {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -65,9 +67,10 @@ body{
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    
+
 }
-.gerichte{
+
+.gerichte {
     display: flex;
     justify-content: center;
     padding: 80px 80px;
@@ -77,18 +80,18 @@ body{
 }
 
 
-.maincontainer{
+.maincontainer {
     background-color: rgb(241, 238, 238);
 }
 
-h2{
+h2 {
     text-align: center;
     padding-top: 40px;
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
 }
 
-.pizzaimg{
+.pizzaimg {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -97,20 +100,30 @@ h2{
     display: flex;
 }
 
-.wasistbesser{
-   display: flex;
-   margin-left: 150px;
+.wasistbesser {
+    display: flex;
+    margin-left: 150px;
     margin-right: 150px;
     margin-top: 30px;
     padding: 80px;
 }
 
-footer{
-    background-color: rgb(68, 67, 67);
-    height: 300px;
+footer {
+    background-color: rgb(31, 31, 31);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.bratkartoffelnimg{
+.footerimgs {
+    
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    margin: 50px;
+}
+
+.bratkartoffelnimg {
     width: 500px;
     height: 400px;
     object-fit: cover;
@@ -118,8 +131,8 @@ footer{
     display: flex;
 }
 
-.gerichtsvorschlag{
-    display: flex ;
+.gerichtsvorschlag {
+    display: flex;
     gap: 32px;
     margin-left: 150px;
     margin-right: 150px;
@@ -127,27 +140,87 @@ footer{
     align-items: start;
     margin-bottom: 64px;
     margin: 64px 150px;
+    text-align: left;
+
 }
 
-.bratkartoffelntext{
+.bratkartoffelntext {
     flex-direction: column;
     padding-top: 0;
-    justify-content: left;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px;
+    gap: 60px;
     display: flex;
-    
+    text-align: left;
+    align-items: flex-start;
 }
 
-.button{
+.button {
     color: white;
-    background-color: rgb(76, 161, 76);
-    margin-top: 100px;
+    background-color: rgb(71, 151, 71);
     padding: 10px 20px;
     text-decoration: none;
 }
 
-.abstand{
+.abstand {
     margin-right: 50px;
 }
 
+.kontaktmain {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 200px;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(221, 216, 216);
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.kontaktmargin{
+    margin-top: 20px;
+}
+
+.inputfeld{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+.messagefeld {
+    height: 300px;
+}
+
+.sendbutton {
+    color: white;
+    background-color: rgb(71, 151, 71);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center  ;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+h3 {
+     font-size: 24px;
+     margin-bottom: 50px;
+     margin-top: 10px;
+}
+
+.rezeptmain{ 
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 80px;
+}
+.rezeptimg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+}
