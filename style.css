@@ -116,7 +116,7 @@ footer {
 }
 
 .footerimgs {
-    
+
     object-fit: cover;
     border-radius: 60px;
     display: flex;
@@ -177,15 +177,16 @@ footer {
     margin-bottom: 200px;
 }
 
-.kontaktmargin{
+.kontaktmargin {
     margin-top: 20px;
 }
 
-.inputfeld{
+.inputfeld {
     border-radius: 10px;
     border: none;
     height: 25px;
 }
+
 .messagefeld {
     height: 300px;
 }
@@ -201,23 +202,24 @@ footer {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    text-align: center  ;
-    margin-left: auto; 
-    margin-right: auto; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3 {
-     font-size: 24px;
-     margin-bottom: 50px;
-     margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 
-.rezeptmain{ 
+.rezeptmain {
     margin-left: 180px;
     margin-right: 180px;
     margin-top: 80px;
 }
-.rezeptimg{
+
+.rezeptimg {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -225,35 +227,35 @@ h3 {
     display: flex;
 }
 
-.impressummain{
+.impressummain {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.profile{
+.profile {
     border-radius: 400px;
     width: 100px;
     height: 100px;
 }
 
-.navkünstler{
+.navkünstler {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 h4 {
-     font-size: 24px;
-     margin-top: 80px;
+    font-size: 24px;
+    margin-top: 80px;
 }
 
-.footermargin{
+.footermargin {
     margin-top: 150px;
 }
 
-.tdddark{
+.tdddark {
     background-color: rgb(238, 235, 235);
 }
 
@@ -263,7 +265,8 @@ table {
     padding: 20px;
     width: 100%;
 }
-td{
+
+td {
     padding: 15px;
     border-radius: 10px;
 }
@@ -276,7 +279,7 @@ td{
     display: flex;
 }
 
-.infos{
+.infos {
     display: flex;
     padding: 20px;
 }
@@ -287,9 +290,116 @@ td{
     margin-left: 10px;
 }
 
-.portionen{
+.portionen {
     background-color: rgb(72, 170, 72);
     border: none;
     padding: 10px;
     color: white;
+    width: 10%;
+    height: 40px;
+}
+
+.buttoninput {
+    width: 10%;
+    height: 30px;
+}
+
+
+@media(max-width: 768px) {
+    .wasistbesser {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .gerichtsvorschlag {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 64px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bratkartoffelntext {
+        align-items: center;
+        text-align: center;
+    }
+
+    .kontaktmain {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
+
+    .rezeptmain {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+    .impressummain {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .divlinkcontainer {
+        justify-content: center;
+    }
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+
+    .logo {
+        padding: 10px;
+        height: 60px;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .gerichte {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .maincontainerimg {
+        justify-content: center;
+    }
+
+    .bratkartoffelnimg {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media(min-width: 1300px) {
+    .kontaktmain {
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 100px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1299px) {
+    .kontaktmain {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
 }
