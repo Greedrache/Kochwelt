@@ -310,8 +310,12 @@ td {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
-        padding: 20px;
+
+        justify-content: center;
+        justify-self: center;
+        display: flex;
     }
+
 
     .gerichtsvorschlag {
         flex-direction: column;
@@ -386,7 +390,19 @@ td {
         width: 400px;
         height: auto;
     }
+
+    .mitte {
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pizzaimg {
+        margin-top: 40px;
+    }
 }
+
 
 @media(min-width: 1300px) {
     .kontaktmain {
