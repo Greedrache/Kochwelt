@@ -295,22 +295,22 @@ td {
     border: none;
     padding: 10px;
     color: white;
-    width: 10%;
+    width: 100px;
     height: 40px;
 }
 
 .buttoninput {
-    width: 10%;
+    width: 100px;
     height: 30px;
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     .wasistbesser {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
-
+        padding: 1px;
         justify-content: center;
         justify-self: center;
         display: flex;
@@ -352,6 +352,9 @@ td {
 
     .divlinkcontainer {
         justify-content: center;
+        margin-right: 20px;
+        margin-bottom: 4px;
+        margin-left: 20px;
     }
 
     header {
@@ -360,12 +363,15 @@ td {
         text-align: center;
         display: flex;
         font-size: 12px;
+        align-items: center;
     }
 
     .logo {
         padding: 10px;
         height: 60px;
         justify-content: center;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     footer {
@@ -400,6 +406,12 @@ td {
 
     .pizzaimg {
         margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .insta{
+        width: 120px;
+        height: 120px;
+        justify-content: center;
     }
 }
 
@@ -418,4 +430,63 @@ td {
         margin-right: 100px;
         margin-top: 100px;
     }
+
+    .bratkartoffelntext {
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bratkartoffelnimg {
+        width: 700px;
+        height: 400px;
+    }
+
+    .gerichtsvorschlag {
+        flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 64px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wasistbesser {
+        flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        justify-content: center;
+        justify-self: center;
+        display: flex;
+    }
+
+    .pizzaimg {
+        margin-top: 80px;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+
+        padding: 300px;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media(max-width: 435px) {
+    .bratkartoffelnimg {
+        width: 250px;
+        height: auto;
+    }
+    .infos{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
 }
