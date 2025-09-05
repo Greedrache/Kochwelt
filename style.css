@@ -11,6 +11,9 @@ header {
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -303,6 +306,10 @@ td {
 .buttoninput {
     width: 100px;
     height: 30px;
+}
+
+main {
+    flex: 1;
 }
 
 
