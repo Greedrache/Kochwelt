@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-end;
     top: 0;
     right: 0;
     left: 0;
@@ -11,9 +11,9 @@ header {
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    min-height: 100dvh;
 }
 
 
@@ -112,18 +112,11 @@ h2 {
 }
 
 footer {
-    background-color: rgb(31, 31, 31);
-    height: 170px;
-    display: flex;
-    justify-content: space-around;
+
 }
 
 .footerimgs {
 
-    object-fit: cover;
-    border-radius: 60px;
-    display: flex;
-    margin: 50px;
 }
 
 .bratkartoffelnimg {
@@ -371,21 +364,12 @@ main {
         margin-left: 20px;
     }
 
-   
-
     .logo {
         padding: 10px;
         height: 60px;
         justify-content: center;
         margin-left: 0;
         margin-bottom: 20px;
-    }
-
-    footer {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        justify-content: center;
     }
 
     .gerichte {
@@ -473,15 +457,6 @@ main {
         justify-content: center;
     }
 
-    footer {
-        flex-direction: column;
-
-        padding: 300px;
-        justify-content: center;
-    }
-
-
-
 }
 
 @media(max-width: 435px) {
@@ -502,14 +477,6 @@ main {
     font-family: "Raleway", sans-serif;
     src: url("fonts/Raleway-Regular.ttf") format("truetype");
 }
-
-
-
-
-
-
-
-
 
 nav {
 	width: 100%;
