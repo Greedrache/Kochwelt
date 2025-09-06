@@ -312,6 +312,12 @@ main {
     flex: 1;
 }
 
+.untereinander {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
 
 @media(max-width: 992px) {
     .wasistbesser {
