@@ -84,6 +84,7 @@ body {
 
 .maincontainer {
     background-color: rgb(241, 238, 238);
+    justify-content: center;
 }
 
 h2 {
