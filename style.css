@@ -365,14 +365,7 @@ main {
         margin-left: 20px;
     }
 
-    header {
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        display: flex;
-        font-size: 12px;
-        align-items: center;
-    }
+   
 
     .logo {
         padding: 10px;
@@ -502,4 +495,84 @@ main {
 @font-face {
     font-family: "Raleway", sans-serif;
     src: url("fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+
+
+nav {
+	width: 100%;
+	background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+nav ul{
+	list-style: none;
+	float: left;
+	width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+nav ul li{
+	float: left;
+	padding: 0.2px 30px;
+	text-align: center;
+}
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+	nav ul li{
+		width: 100%;
+		padding: 15px 0px;
+        justify-content: center;
+	}
+	nav ul {
+		display: none;
+        justify-content: center;
+	}
+}
+.burgericon {
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+.burgericon div {
+	width: 90%;
+	margin: 7px 5%;
+	height: 3px;
+	background-color: black;
+}
+@media (max-width: 600px) {
+	.burgericon {
+		display: block;
+	}
+}
+#navigation {
+	opacity: 0;
+}
+#navigation:checked ~ ul {
+	display: block;
+}
+#navigation:checked ~ label .burgericon {
+	margin-top: 15px;
+}
+#navigation:checked ~ label .burgericon div:first-of-type{
+	rotate: 45deg;
+}
+#navigation:checked ~ label .burgericon div:last-child{
+	rotate: -45deg;
+	margin-top: -10px;
+}
+#navigation:checked ~ label .burgericon div:nth-child(2){
+	display: none;
 }
