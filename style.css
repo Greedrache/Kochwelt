@@ -70,7 +70,6 @@ body {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-
 }
 
 .gerichte {
@@ -113,6 +112,19 @@ h2 {
 
 footer {
     background-color: rgb(72, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 112px;
+}
+
+.footer-kochweltlogo {
+    height: 36px;
+}
+
+.footer-instalogo {
+    height: 36px;
+    width: 36px;
 }
 
 
