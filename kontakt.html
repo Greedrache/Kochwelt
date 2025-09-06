@@ -41,14 +41,14 @@
             <h3>Kontaktiere uns</h3>
             <form onsubmit="sendMail(event)" action="https://formspree.io/f/xeolvqvv" method="POST">
 
-                <label class="untereinander">
+                <label for="name" class="untereinander">
                     Dein Name:
-                    <input class="inputfeld" type="text" name="name">
+                    <input id="name" minlength="2" class="inputfeld" type="text" name="name">
                 </label>
 
-                <label class="untereinander">
+                <label for="email" class="untereinander">
                     Deine Email:
-                    <input class="inputfeld" type="email" name="email">
+                    <input id="email" class="inputfeld" type="email" name="email">
                 </label>
 
                 <label for="answer" class="untereinander">
