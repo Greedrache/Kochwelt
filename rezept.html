@@ -7,6 +7,7 @@
     <title>Rezept des Tages</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logo_small.png">
+    <script src="script.js"></script>
 
 </head>
 
@@ -60,27 +61,25 @@
 
         </div>
 
-        <table>
+        <table id="ingredients-table">
 
-            <tr>
-                <td> <label for="anzahlderzutaten">Zutaten für</label>
-                    <input class="buttoninput" id="anzahlderzutaten" type="number" min="1" max="5">
-                    <button class="portionen">Portionen</button>
-                </td>
-
-            </tr>
+            <div class="portions-input">
+                <label for="portions">Zutaten für</label>
+                <input class="buttoninput" id="portions" value="1" step="1" type="number" min="1" max="5">
+                <button onclick="scaleIngredients()" class="portionen">Portionen</button>
+            </div>
 
 
             <tr class="tdddark">
-                <td>500 g Kartoffeln (festkochend)</td>
+                <td class="ingredient">500 g Kartoffeln (festkochend)</td>
             </tr>
 
             <tr>
-                <td>1 Zwiebel</td>
+                <td class="ingredient">1 Zwiebel</td>
             </tr>
 
             <tr class="tdddark">
-                <td>3 EL Pflanzenöl oder Butterschmalz</td>
+                <td class="ingredient">3 EL Pflanzenöl oder Butterschmalz</td>
             </tr>
 
             <tr>
