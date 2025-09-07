@@ -42,7 +42,6 @@ body {
 
 .logo {
   margin-left: 100px;
-  padding: 30px;
   height: 80px;
 }
 
@@ -346,7 +345,6 @@ main {
   }
 
   .divlinkcontainer {
-    justify-content: center;
     margin-right: 20px;
     margin-bottom: 4px;
     margin-left: 20px;
@@ -357,7 +355,6 @@ main {
     height: 60px;
     justify-content: center;
     margin-left: 0;
-    margin-bottom: 20px;
   }
 
   .gerichte {
@@ -399,6 +396,10 @@ main {
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 100px;
+  }
+
+  header {
+    font-size: 20px;
   }
 }
 
@@ -479,9 +480,9 @@ nav ul {
 }
 nav ul li {
   float: left;
-  padding: 0.2px 30px;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
