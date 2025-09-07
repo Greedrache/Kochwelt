@@ -42,7 +42,7 @@ body {
 
 .logo {
   margin-left: 100px;
-  padding: 30px;
+  padding: 10px;
   height: 80px;
 }
 
@@ -84,8 +84,7 @@ body {
 
 h2 {
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: 0;
+
   font-family: "Raleway", sans-serif;
 }
 
@@ -107,11 +106,10 @@ h2 {
 }
 
 .bratkartoffelnimg {
-  width: 500px;
-  height: 400px;
-  object-fit: cover;
+  height: 300px;
+  width: 400px;
+  margin-left: 81px;
   border-radius: 10px;
-  display: flex;
 }
 
 .gerichtsvorschlag {
@@ -128,12 +126,12 @@ h2 {
 
 .bratkartoffelntext {
   flex-direction: column;
-  padding-top: 0;
-  padding: 10px;
-  gap: 60px;
+  gap: 0;
+  padding-left: 32px;
   display: flex;
   text-align: left;
   align-items: flex-start;
+  margin: 0;
 }
 
 .button {
@@ -147,18 +145,6 @@ h2 {
   margin-right: 50px;
 }
 
-.kontaktmain {
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 200px;
-  border-radius: 10px;
-  display: flex;
-  background-color: rgb(221, 216, 216);
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 200px;
-}
-
 .kontaktmargin {
   margin-top: 20px;
 }
@@ -167,6 +153,7 @@ h2 {
   border-radius: 10px;
   border: none;
   height: 25px;
+  width: 450px;
 }
 
 .messagefeld {
@@ -394,7 +381,7 @@ main {
   }
 }
 
-@media (min-width: 1300px) {
+@media (max-width: 1300px) {
   .kontaktmain {
     margin-left: 300px;
     margin-right: 300px;
@@ -539,6 +526,7 @@ nav ul li {
 .h4-preparation {
   margin-bottom: -3px;
   padding-top: 8px;
+  color: #000000ad;
 }
 .table-container {
   margin-top: 64px;
@@ -592,19 +580,74 @@ hr {
   padding-top: 10px;
   gap: 18px;
 }
-.tim-name {
+.name {
   padding-left: 20px;
   color: grey;
   font-size: 24px;
 }
 .just-padding {
   padding: 144px;
-  margin-top: 133px;
+  margin-top: 131px;
+
   background-color: rgb(99 99 99);
 }
 .receipt-fontsize {
   font-size: 18px;
+  color: #000000ad;
 }
 h4 {
   margin-bottom: 10px;
+}
+.contact-footer {
+  padding: 38px 200px;
+  background-color: #000000cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  height: 65px;
+}
+.footer-social {
+  height: 40px;
+}
+.contact-section {
+  padding-bottom: 270px;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.kontaktmain {
+  background-color: #75757530;
+  padding: 16px;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+}
+.button {
+  color: white;
+  background-color: rgb(0, 128, 0);
+  padding: 10px 50px;
+  text-decoration: none;
+}
+.button-padding {
+  margin-top: 70px;
+}
+.bratkartoffelntex {
+  margin: 0;
+  color: rgb(128, 128, 128);
+  font-size: 16px;
+  font-weight: 400;
+}
+h2 {
+  font-weight: 600;
+  padding-top: 32px;
+}
+.just-padding-start {
+  padding: 144px;
+  margin-top: 81px;
+
+  background-color: rgb(99 99 99);
 }

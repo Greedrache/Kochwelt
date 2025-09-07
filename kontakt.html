@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt Kontakt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/logo_small.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo_small.png" />
     <script src="script.js"></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <nav>
-            <input type="checkbox" id="navigation">
-            <label for="navigation" title="Navigation öffnen">
-                <div class="burgericon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </label>
-            <a href="./index.html"><img class="logo" src="img/logo.png" alt="Unser Logo"></a>
+      <nav>
+        <input type="checkbox" id="navigation" />
+        <label for="navigation" title="Navigation öffnen">
+          <div class="burgericon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </label>
+        <a href="./index.html"
+          ><img class="logo" src="img/logo.png" alt="Unser Logo"
+        /></a>
 
-            <ul class="divlinkcontainer">
-                <li><a class="divlink" href="./index.html">Start</a></li>
-                <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
-                <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
-                <li><a class="divlink" href="./impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
+        <ul class="divlinkcontainer">
+          <li><a class="divlink" href="./index.html">Start</a></li>
+          <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
+          <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
+          <li><a class="divlink" href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <main>
-
+      <div class="contact-section">
         <div class="kontaktmain">
-            <h3>Kontaktiere uns</h3>
-            <form onsubmit="sendMail(event)" action="https://formspree.io/f/xeolvqvv" method="POST">
+          <h3>Kontaktiere uns</h3>
+          <form
+            onsubmit="sendMail(event)"
+            action="https://formspree.io/f/xeolvqvv"
+            method="POST"
+          >
+            <label for="name" class="untereinander">
+              Dein Name:
+              <input
+                id="name"
+                minlength="2"
+                class="inputfeld"
+                type="text"
+                name="name"
+              />
+            </label>
 
-                <label for="name" class="untereinander">
-                    Dein Name:
-                    <input id="name" minlength="2" class="inputfeld" type="text" name="name">
-                </label>
+            <label for="email" class="untereinander">
+              Deine Email:
+              <input id="email" class="inputfeld" type="email" name="email" />
+            </label>
 
-                <label for="email" class="untereinander">
-                    Deine Email:
-                    <input id="email" class="inputfeld" type="email" name="email">
-                </label>
+            <label for="answer" class="untereinander">
+              Deine Antwort:
+              <textarea
+                id="answer"
+                minlength="1"
+                class="inputfeld messagefeld"
+                name="message"
+              ></textarea>
+            </label>
 
-                <label for="answer" class="untereinander">
-                    Deine Antwort:
-                    <textarea id="answer" minlength="1" class="inputfeld messagefeld" name="message"></textarea>
-                </label>
-
-                <button class="sendbutton" type="submit">Abschicken</button>
-            </form>
+            <button class="sendbutton" type="submit">Abschicken</button>
+          </form>
         </div>
+      </div>
+      </div>
     </main>
 
-    <footer>
-        <img class="footer-kochweltlogo" src="./img/logowhite.png" alt="Unser Logo">
-        <img class="footer-instalogo" src="./img/instagram_white.png" alt="Insta Logo">
+    <footer class="contact-footer">
+      <img class="footer-logo" src="./img/logowhite.png" alt="" />
+      <img class="footer-social" src="./img/instagram_white.png" alt="" />
     </footer>
-
-</body>
-
+  </body>
 </html>

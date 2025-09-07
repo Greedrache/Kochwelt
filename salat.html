@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/logo_small.png" />
     <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -67,60 +71,63 @@
           />05.03.2025
         </div>
       </div>
+      <div class="table-container">
+        <hr />
+        <table id="ingredients-table">
+          <div class="portions-input">
+            <label for="portions" class="ingredient-color">Zutaten für</label>
+            <div class="button-input">
+              <input
+                class="buttoninput"
+                id="portions"
+                value="1"
+                step="1"
+                type="number"
+                min="1"
+                max="5"
+              />
+              <button onclick="scaleIngredients()" class="portionen">
+                Portionen
+              </button>
+            </div>
+          </div>
+          <tr class="tdddark">
+            <td class="ingredient">100 g gemischter Blattsalat</td>
+          </tr>
 
-      <table id="ingredients-table">
-        <div class="portions-input">
-          <label for="portions">Zutaten für</label>
-          <input
-            class="buttoninput"
-            id="portions"
-            value="1"
-            step="1"
-            type="number"
-            min="1"
-            max="5"
-          />
-          <button onclick="scaleIngredients()" class="portionen">
-            Portionen
-          </button>
-        </div>
+          <tr>
+            <td class="ingredient">1 Tomate</td>
+          </tr>
 
-        <tr class="tdddark">
-          <td class="ingredient">100 g gemischter Blattsalat</td>
-        </tr>
+          <tr class="tdddark">
+            <td class="ingredient">1/2 Gurke</td>
+          </tr>
 
-        <tr>
-          <td class="ingredient">1 Tomate</td>
-        </tr>
+          <tr>
+            <td class="ingredient">50 g Feta-Käse (optional)</td>
+          </tr>
 
-        <tr class="tdddark">
-          <td class="ingredient">1/2 Gurke</td>
-        </tr>
+          <tr class="tdddark">
+            <td class="ingredient">2 EL Olivenöl</td>
+          </tr>
 
-        <tr>
-          <td class="ingredient">50 g Feta-Käse (optional)</td>
-        </tr>
+          <tr>
+            <td class="ingredient">1 EL Balsamico-Essig</td>
+          </tr>
 
-        <tr class="tdddark">
-          <td class="ingredient">2 EL Olivenöl</td>
-        </tr>
+          <tr class="tdddark">
+            <td class="ingredient">1 TL Senf</td>
+          </tr>
 
-        <tr>
-          <td class="ingredient">1 EL Balsamico-Essig</td>
-        </tr>
+          <tr>
+            <td>Salz, Pfeffer</td>
+          </tr>
 
-        <tr class="tdddark">
-          <td class="ingredient">1 TL Senf</td>
-        </tr>
-
-        <tr>
-          <td>Salz, Pfeffer</td>
-        </tr>
-
-        <tr class="tdddark">
-          <td>1 Handvoll Croutons (optional)</td>
-        </tr>
-      </table>
+          <tr class="tdddark">
+            <td>1 Handvoll Croutons (optional)</td>
+          </tr>
+        </table>
+      </div>
 
       <div>
         <h4 class="h4-preparation">Zubereitung</h4>
@@ -133,7 +140,7 @@
             />ca. 10 Min.
           </div>
 
-          <div class="infos ig">
+          <div class="infos ig margin-infos-ig">
             <img
               class="icons"
               src="img/icons/clock-regular.svg"
@@ -153,25 +160,18 @@
       </div>
 
       <div>
-        <h4>Rezept erstellt von</h4>
+        <h4 class="receipt-fontsize">Rezept erstellt von</h4>
         <div class="navkünstler">
-          <img class="profile" src="img/tim.jpeg" alt="Bild des Erstellers" />
-          <span class="">Tim</span>
+          <img
+            class="profile"
+            src="img/profile.png"
+            alt="Bild des Erstellers"
+          />
+          <span class="name">Tim Draaijer</span>
         </div>
       </div>
     </main>
 
-    <footer class="footermargin">
-      <img
-        class="footer-kochweltlogo"
-        src="./img/logowhite.png"
-        alt="Unser Logo"
-      />
-      <img
-        class="footer-instalogo"
-        src="./img/instagram_white.png"
-        alt="Insta Logo"
-      />
-    </footer>
+    <footer class="just-padding"></footer>
   </body>
 </html>
