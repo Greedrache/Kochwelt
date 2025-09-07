@@ -54,51 +54,49 @@
 
         </div>
 
-        <table>
+        <table id="ingredients-table">
 
-            <tr>
-                <td> <label for="anzahlderzutaten">Zutaten für</label>
-                    <input class="buttoninput" id="anzahlderzutaten" type="number" min="1" max="5">
-                    <button class="portionen">Portionen</button>
-                </td>
-
-            </tr>
+            <div class="portions-input">
+                <label for="portions">Zutaten für</label>
+                <input class="buttoninput" id="portions" value="1" step="1" type="number" min="1" max="5">
+                <button onclick="scaleIngredients()" class="portionen">Portionen</button>
+            </div>
 
 
             <tr class="tdddark">
-                <td>150 g asiatische Eiernudeln (oder Spaghetti)</td>
+                <td class="ingredient">150 g asiatische Eiernudeln (oder Spaghetti)</td>
             </tr>
 
             <tr>
-                <td>1 L Hühner- oder Gemüsebrühe</td>
+                <td class="ingredient">1 L Hühner- oder Gemüsebrühe</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1 Karotte</td>
+                <td class="ingredient">1 Karotte</td>
             </tr>
 
             <tr>
-                <td>1 kleine Zucchini</td>
+                <td class="ingredient">1 kleine Zucchini</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1 Frühlingszwiebel</td>
+                <td class="ingredient">1 Frühlingszwiebel</td>
             </tr>
 
             <tr>
-                <td>1 Knoblauchzehe</td>
+                <td class="ingredient">1 Knoblauchzehe</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1 Stück Ingwer (ca. 2 cm)</td>
+                <td class="ingredient">1 Stück Ingwer (ca. 2 cm)</td>
             </tr>
 
             <tr>
-                <td>2 EL Sojasauce</td>
+                <td class="ingredient">2 EL Sojasauce</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1 TL Sesamöl</td>
+                <td class="ingredient">1 TL Sesamöl</td>
             </tr>
 
             <tr>
@@ -110,7 +108,7 @@
             </tr>
 
             <tr>
-                <td>1 Limette (optional)</td>
+                <td class="ingredient">1 Limette (optional)</td>
             </tr>
         </table>
 

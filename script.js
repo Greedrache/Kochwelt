@@ -18,8 +18,7 @@ function sendMail(event){﻿
 
 
 
-
-
+// Funktion um Zutaten zu berechnen :)
 
 
 function scaleIngredients() {

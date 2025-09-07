@@ -54,43 +54,41 @@
 
         </div>
 
-        <table>
+        <table id="ingredients-table">
 
-            <tr>
-                <td> <label for="anzahlderzutaten">Zutaten für</label>
-                    <input class="buttoninput" id="anzahlderzutaten" type="number" min="1" max="5">
-                    <button class="portionen">Portionen</button>
-                </td>
-
-            </tr>
+            <div class="portions-input">
+                <label for="portions">Zutaten für</label>
+                <input class="buttoninput" id="portions" value="1" step="1" type="number" min="1" max="5">
+                <button onclick="scaleIngredients()" class="portionen">Portionen</button>
+            </div>
 
 
             <tr class="tdddark">
-                <td>100 g gemischter Blattsalat</td>
+                <td class="ingredient">100 g gemischter Blattsalat</td>
             </tr>
 
             <tr>
-                <td>1 Tomate</td>
+                <td class="ingredient">1 Tomate</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1/2 Gurke</td>
+                <td class="ingredient">1/2 Gurke</td>
             </tr>
 
             <tr>
-                <td>50 g Feta-Käse (optional)</td>
+                <td class="ingredient">50 g Feta-Käse (optional)</td>
             </tr>
 
             <tr class="tdddark">
-                <td>2 EL Olivenöl</td>
+                <td class="ingredient">2 EL Olivenöl</td>
             </tr>
 
             <tr>
-                <td>1 EL Balsamico-Essig</td>
+                <td class="ingredient">1 EL Balsamico-Essig</td>
             </tr>
 
             <tr class="tdddark">
-                <td>1 TL Senf</td>
+                <td class="ingredient">1 TL Senf</td>
             </tr>
 
             <tr>
