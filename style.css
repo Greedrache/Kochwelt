@@ -510,8 +510,9 @@ nav ul li{
 	float: left;
 	padding: 0.2px 30px;
 	text-align: center;
+    white-space: nowrap;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav{
         flex-direction: column;
         align-items: center;
@@ -537,7 +538,16 @@ nav ul li{
 	height: 3px;
 	background-color: black;
 }
-@media (max-width: 600px) {
+@media(max-width: 838px) {
+    .logo-responsive-zwei{
+        margin-right: -65px;
+    }
+}
+@media (max-width: 768px) {
+
+        .logo-responsive-drei{
+        margin-right: 0px;
+    }
 	.burgericon {
 		display: block;
 	}
@@ -561,3 +571,29 @@ nav ul li{
 #navigation:checked ~ label .burgericon div:nth-child(2){
 	display: none;
 }
+@media  (max-width: 1129px) {
+    .nav-responsive{
+        margin-right: 100px;
+    }
+    .divlinkcontainer-responsive{
+        margin-right: 0px;
+    }
+
+}
+@media (max-width: 1030px){
+
+    .nav-responsive-zwei{
+        margin-right: -100px;
+    }
+}
+@media (max-width: 913px){
+    .nav-responsive-drei{
+        font-size: 12px;
+    }
+   .logo-responsive {
+       width: 131px;
+       height: 40px;
+       margin-left: 71px;
+    }
+}
+
