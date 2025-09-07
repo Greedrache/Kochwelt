@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/logo_small.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo_small.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-
-</head>
-
-<body>
-
+  <body>
     <header>
 
 
-        <nav class="nav-responsive nav-responsive-zwei nav-responsive-drei">
+        <nav>
             <input type="checkbox" id="navigation">
             <label for="navigation" title="Navigation öffnen">
                 <div class="burgericon">
@@ -26,9 +25,9 @@
                     <div></div>
                 </div>
             </label>
-            <a href="./index.html"><img class="logo logo-responsive-zwei logo-responsive-drei" src="img/logo.png" alt="Unser Logo"></a>
+            <a href="./index.html"><img class="logo" src="img/logo.png" alt="Unser Logo"></a>
 
-            <ul class="divlinkcontainer divlinkcontainer-responsive">
+            <ul class="divlinkcontainer">
                 <li><a class="divlink" href="./index.html">Start</a></li>
                 <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
                 <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
@@ -42,79 +41,99 @@
     </header>
 
     <main>
-
-        <div class="gerichtsvorschlag">
-            <img class="bratkartoffelnimg" src="img/bratkartoffeln.jpeg" alt="Bild von bratkartoffeln">
-            <div class="bratkartoffelntext">
-                <h2 class="bratkartoffelntext">Bratkartoffeln</h2>
-                <span class="bratkartoffelntext">Bratkartoffeln sind ein zeitloser Favorit, der mit minimalem Aufwand
-                    maximalen Geschmack liefert. Ob
-                    als deftiges Frühstück, sättigende Beilage oder sogar Hauptgericht – dieses Gericht bringt
-                    Gemütlichkeit
-                    auf den Teller. In nur etwa 10 Minuten kannst du knusprige Bratkartoffeln zaubern, die jeden
-                    begeistern.
-                </span>
-                <div><a href="./rezept.html" class="button">Rezept öffnen</a></div>
-            </div>
+      <div class="gerichtsvorschlag">
+        <img
+          class="bratkartoffelnimg"
+          src="img/bratkartoffeln.jpeg"
+          alt="Bild von bratkartoffeln"
+        />
+        <div class="bratkartoffelntext">
+          <h2 class="bratkartoffelntext">Bratkartoffeln</h2>
+          <span class="bratkartoffelntext"
+            >Bratkartoffeln sind ein zeitloser Favorit, der mit minimalem
+            Aufwand maximalen Geschmack liefert. Ob als deftiges Frühstück,
+            sättigende Beilage oder sogar Hauptgericht – dieses Gericht bringt
+            Gemütlichkeit auf den Teller. In nur etwa 10 Minuten kannst du
+            knusprige Bratkartoffeln zaubern, die jeden begeistern.
+          </span>
+          <div><a href="./rezept.html" class="button">Rezept öffnen</a></div>
         </div>
+      </div>
 
+      <div class="maincontainer">
+        <h2>Lust auf was Neues?</h2>
 
+        <div class="gerichte mitte">
+          <div>
+            <a class="maincontainerimg" href="./nudellsuppe.html"
+              ><img
+                class="maincontainerimg"
+                src="img/nudelsuppe.jpeg"
+                alt="Bild einer Nudelsuppe"
+            /></a>
+            <a class="lustaufwasneues" href="./nudellsuppe.html">Nuddelsuppe</a>
+          </div>
 
+          <div>
+            <a href="./salat.html"
+              ><img
+                class="maincontainerimg"
+                src="img/salat.jpeg"
+                alt="Bild eines Salats"
+            /></a>
+            <a class="lustaufwasneues" href="./salat.html">Salat</a>
+          </div>
 
-        <div class="maincontainer">
-
-            <h2>Lust auf was Neues?</h2>
-
-            <div class="gerichte mitte">
-                <div>
-                    <a class="maincontainerimg" href="./nudellsuppe.html"><img class="maincontainerimg"
-                            src="img/nudelsuppe.jpeg" alt="Bild einer Nudelsuppe"></a>
-                    <a class="lustaufwasneues" href="./nudellsuppe.html">Nuddelsuppe</a>
-                </div>
-
-                <div>
-                    <a href="./salat.html"><img class="maincontainerimg" src="img/salat.jpeg"
-                            alt="Bild eines Salats"></a>
-                    <a class="lustaufwasneues" href="./salat.html">Salat</a>
-                </div>
-
-                <div>
-                    <a href="./pfannekuchen.html"><img class="maincontainerimg" src="img/pfannkuchen.jpeg"
-                            alt="Bild eines Pfannkuchens"></a>
-                    <a class="lustaufwasneues" href="./pfannekuchen.html">Pfannkuchen</a>
-                </div>
-            </div>
-
+          <div>
+            <a href="./pfannekuchen.html"
+              ><img
+                class="maincontainerimg"
+                src="img/pfannkuchen.jpeg"
+                alt="Bild eines Pfannkuchens"
+            /></a>
+            <a class="lustaufwasneues" href="./pfannekuchen.html"
+              >Pfannkuchen</a
+            >
+          </div>
         </div>
+      </div>
 
-        <div>
-            <h2>Burger oder Pizza – Wer trägt die Krone?</h2>
-            <div class="wasistbesser">
-                <span class="abstand">Der Burger punktet mit seiner Vielseitigkeit – saftiges Patty, frisches Gemüse und
-                    unzählige Toppings
-                    machen ihn zum Individualisten. Pizza hingegen ist der Teamplayer, perfekt zum Teilen, mit
-                    knusprigem
-                    Teig
-                    und einer Geschmacksexplosion aus Tomate, Käse und Co. Geschmacklich hängt es von der Zubereitung
-                    ab,
-                    aber
-                    die Pizza hat oft die Nase vorn durch ihre universelle Beliebtheit und kulturelle Vielfalt. Am Ende
-                    entscheidet der Moment: Lust auf handheld oder geselliges Teilen? Die Krone bleibt geteilt – beide
-                    sind
-                    Kult!
-                </span>
-                <div><img class="pizzaimg" src="img/pizza.jpeg" alt="Bild von einer Pizza"></div>
-            </div>
-
+      <div>
+        <h2>Burger oder Pizza – Wer trägt die Krone?</h2>
+        <div class="wasistbesser">
+          <span class="abstand"
+            >Der Burger punktet mit seiner Vielseitigkeit – saftiges Patty,
+            frisches Gemüse und unzählige Toppings machen ihn zum
+            Individualisten. Pizza hingegen ist der Teamplayer, perfekt zum
+            Teilen, mit knusprigem Teig und einer Geschmacksexplosion aus
+            Tomate, Käse und Co. Geschmacklich hängt es von der Zubereitung ab,
+            aber die Pizza hat oft die Nase vorn durch ihre universelle
+            Beliebtheit und kulturelle Vielfalt. Am Ende entscheidet der Moment:
+            Lust auf handheld oder geselliges Teilen? Die Krone bleibt geteilt –
+            beide sind Kult!
+          </span>
+          <div>
+            <img
+              class="pizzaimg"
+              src="img/pizza.jpeg"
+              alt="Bild von einer Pizza"
+            />
+          </div>
         </div>
-
+      </div>
     </main>
 
     <footer>
-        <img class="footer-kochweltlogo" src="./img/logowhite.png" alt="Unser Logo">
-        <img class="footer-instalogo" src="./img/instagram_white.png" alt="Insta Logo">
+      <img
+        class="footer-kochweltlogo"
+        src="./img/logowhite.png"
+        alt="Unser Logo"
+      />
+      <img
+        class="footer-instalogo"
+        src="./img/instagram_white.png"
+        alt="Insta Logo"
+      />
     </footer>
-
-</body>
-
+  </body>
 </html>
