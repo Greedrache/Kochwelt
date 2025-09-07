@@ -41,8 +41,12 @@ body {
 }
 
 .logo {
+<<<<<<< HEAD
   margin-left: 100px;
   padding: 10px;
+=======
+  margin-left: 120px;
+>>>>>>> bd31dfcf2199baa8abefd47d15deea2f423005bc
   height: 80px;
 }
 
@@ -333,7 +337,6 @@ main {
   }
 
   .divlinkcontainer {
-    justify-content: center;
     margin-right: 20px;
     margin-bottom: 4px;
     margin-left: 20px;
@@ -344,7 +347,6 @@ main {
     height: 60px;
     justify-content: center;
     margin-left: 0;
-    margin-bottom: 20px;
   }
 
   .gerichte {
@@ -386,6 +388,10 @@ main {
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 100px;
+  }
+
+  header {
+    font-size: 20px;
   }
 }
 
@@ -464,25 +470,25 @@ nav ul {
   display: flex;
   justify-content: end;
 }
-nav ul li {
-  float: left;
-  padding: 0.2px 30px;
-  text-align: center;
+nav ul li{
+	float: left;
+	padding: 0.2px 30px;
+	text-align: center;
 }
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav ul li {
-    width: 100%;
-    padding: 15px 0px;
-    justify-content: center;
-  }
-  nav ul {
-    display: none;
-    justify-content: center;
-  }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+	nav ul li{
+		width: 100%;
+		padding: 15px 0px;
+        justify-content: center;
+	}
+	nav ul {
+		display: none;
+        justify-content: center;
+	}
 }
 .burgericon {
   width: 30px;
@@ -496,9 +502,9 @@ nav ul li {
   background-color: black;
 }
 @media (max-width: 600px) {
-  .burgericon {
-    display: block;
-  }
+	.burgericon {
+		display: block;
+	}
 }
 #navigation {
   opacity: 0;
@@ -518,6 +524,7 @@ nav ul li {
 }
 #navigation:checked ~ label .burgericon div:nth-child(2) {
   display: none;
+<<<<<<< HEAD
 }
 .margin-infos-ig {
   margin-left: 24px;
@@ -651,3 +658,4 @@ h2 {
 
   background-color: rgb(99 99 99);
 }
+
