@@ -433,6 +433,38 @@ main {
     justify-content: center;
   }
 }
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav ul li {
+  width: 100%;
+  padding: 15px 0px;
+  justify-content: center;
+}
+nav ul {
+  display: none;
+  justify-content: center;
+}
+
+.burgericon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.burgericon div {
+  width: 90%;
+  margin: 7px 5%;
+  height: 3px;
+  background-color: black;
+}
+@media (max-width: 600px) {
+  .burgericon {
+    display: block;
+  }
+}
 
 @media (max-width: 435px) {
   .bratkartoffelnimg {
@@ -471,38 +503,7 @@ nav ul li {
   padding: 0.2px 30px;
   text-align: center;
 }
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-nav ul li {
-  width: 100%;
-  padding: 15px 0px;
-  justify-content: center;
-}
-nav ul {
-  display: none;
-  justify-content: center;
-}
 
-.burgericon {
-  width: 30px;
-  height: 30px;
-  display: none;
-}
-.burgericon div {
-  width: 90%;
-  margin: 7px 5%;
-  height: 3px;
-  background-color: black;
-}
-@media (max-width: 600px) {
-  .burgericon {
-    display: block;
-  }
-}
 #navigation {
   opacity: 0;
 }
@@ -521,136 +522,4 @@ nav ul {
 }
 #navigation:checked ~ label .burgericon div:nth-child(2) {
   display: none;
-}
-.margin-infos-ig {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-.h4-preparation {
-  margin-bottom: -3px;
-  padding-top: 8px;
-  color: #000000ad;
-}
-.table-container {
-  margin-top: 64px;
-}
-.portions-input {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  padding-top: 8px;
-}
-.portions {
-  padding-right: 24px;
-}
-.buttoninput {
-  height: 37px;
-  margin: 0;
-  border-radius: 10px 0 0 10px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 164px;
-}
-.portionen {
-  height: 42px;
-  width: 130px;
-  background-color: green;
-  color: white;
-  display: inline-block;
-  margin: 0;
-  border: none;
-}
-.button-input {
-  padding-left: 24px;
-  text-align: center;
-  display: flex;
-}
-hr {
-  border-top: 1px solid rgb(235, 235, 235);
-  border-width: 1px;
-}
-
-.ingredient-color {
-  font-size: 16px;
-  color: rgb(99 99 99);
-}
-.ig {
-  border-radius: 10px;
-  padding: 5px 17px;
-  background-color: rgb(235, 235, 235);
-}
-.navkünstler {
-  padding-top: 10px;
-  gap: 18px;
-}
-.name {
-  padding-left: 20px;
-  color: grey;
-  font-size: 24px;
-}
-.just-padding {
-  padding: 144px;
-  margin-top: 131px;
-
-  background-color: rgb(99 99 99);
-}
-.receipt-fontsize {
-  font-size: 18px;
-  color: #000000ad;
-}
-h4 {
-  margin-bottom: 10px;
-}
-.contact-footer {
-  padding: 38px 200px;
-  background-color: #000000cc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-logo {
-  height: 65px;
-}
-.footer-social {
-  height: 40px;
-}
-.contact-section {
-  padding-bottom: 270px;
-  padding-top: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.kontaktmain {
-  background-color: #75757530;
-  padding: 16px;
-  flex-direction: column;
-  display: flex;
-  border-radius: 20px;
-}
-.button {
-  color: white;
-  background-color: rgb(0, 128, 0);
-  padding: 10px 50px;
-  text-decoration: none;
-}
-.button-padding {
-  margin-top: 70px;
-}
-.bratkartoffelntex {
-  margin: 0;
-  color: rgb(128, 128, 128);
-  font-size: 16px;
-  font-weight: 400;
-}
-h2 {
-  font-weight: 600;
-  padding-top: 32px;
-}
-.just-padding-start {
-  padding: 144px;
-  margin-top: 81px;
-
-  background-color: rgb(99 99 99);
 }
