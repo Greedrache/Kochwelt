@@ -1,162 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezept des Tages</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/logo_small.png" />
-    <script src="script.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="navigation" />
-        <label for="navigation" title="Navigation öffnen">
-          <div class="burgericon">
-            <div></div>
-            <div></div>
-            <div></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo_small.png" />
+  <script src="script.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="navigation" />
+      <label for="navigation" title="Navigation öffnen">
+        <div class="burgericon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </label>
+      <a href="./index.html"><img class="logo" src="img/logo.png" alt="Unser Logo" /></a>
+
+      <ul class="divlinkcontainer">
+        <li><a class="divlink" href="./index.html">Start</a></li>
+        <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
+        <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="divlink" href="./impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="rezeptmain">
+    <h1>Bratkartoffeln</h1>
+    <img class="rezeptimg" src="img/breitekartoffeln.jpeg" alt="Bild von Bratkartoffeln" />
+
+    <div class="infos">
+      <div class="infos ig">
+        <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />15 Min.
+      </div>
+
+      <div class="infos ig margin-infos-ig">
+        <img class="icons" src="img/icons/brain-solid.svg" alt="Gehirn Icon" />
+        Einfach
+      </div>
+
+      <div class="infos ig">
+        <img class="icons" src="img/icons/calendar-alt-regular.svg" alt="Kalernder Icon" />03.09.2025
+      </div>
+    </div>
+
+    <section class="table-container">
+      <hr />
+      <table id="ingredients-table">
+        <div class="portions-input">
+          <label for="portions" class="ingredient-color">Zutaten für</label>
+          <div class="button-input">
+            <input class="buttoninput" id="portions" value="1" step="1" type="number" min="1" max="5" />
+            <button onclick="scaleIngredients()" class="portionen">
+              Portionen
+            </button>
           </div>
-        </label>
-        <a href="./index.html"
-          ><img class="logo" src="img/logo.png" alt="Unser Logo"
-        /></a>
+        </div>
 
-        <ul class="divlinkcontainer">
-          <li><a class="divlink" href="./index.html">Start</a></li>
-          <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
-          <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
-          <li><a class="divlink" href="./impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
-    </header>
+        <tr class="tdddark">
+          <td class="ingredient" data-original="500g Kartoffeln">500 g Kartoffeln (festkochend)</td>
+        </tr>
 
-    <main class="rezeptmain">
-      <h1>Bratkartoffeln</h1>
-      <img
-        class="rezeptimg"
-        src="img/breitekartoffeln.jpeg"
-        alt="Bild von Bratkartoffeln"
-      />
+        <tr>
+          <td class="ingredient"data-original="1 Zwiebel">1 Zwiebel</td>
+        </tr>
+
+        <tr class="tdddark">
+          <td class="ingredient"data-original="3 El Pflanzenöl">3 EL Pflanzenöl oder Butterschmalz</td>
+        </tr>
+
+        <tr>
+          <td>Salz</td>
+        </tr>
+
+        <tr class="tdddark">
+          <td>Pfeffer</td>
+        </tr>
+      </table>
+    </section>
+    <div>
+      <h4 class="h4-preparation">Zubereitung</h4>
 
       <div class="infos">
         <div class="infos ig">
-          <img
-            class="icons"
-            src="img/icons/clock-regular.svg"
-            alt="Uhr Icon"
-          />15 Min.
+          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />ca. 15 Min.
         </div>
 
         <div class="infos ig margin-infos-ig">
-          <img
-            class="icons"
-            src="img/icons/brain-solid.svg"
-            alt="Gehirn Icon"
-          />
-          Einfach
-        </div>
-
-        <div class="infos ig">
-          <img
-            class="icons"
-            src="img/icons/calendar-alt-regular.svg"
-            alt="Kalernder Icon"
-          />03.09.2025
+          <img class="icons" src="img/icons/clock-regular.svg" alt="Gehirn Icon" />Gesamtzeit ca. 15 Minuten
         </div>
       </div>
 
-      <section class="table-container">
-        <hr />
-        <table id="ingredients-table">
-          <div class="portions-input">
-            <label for="portions" class="ingredient-color">Zutaten für</label>
-            <div class="button-input">
-              <input
-                class="buttoninput"
-                id="portions"
-                value="1"
-                step="1"
-                type="number"
-                min="1"
-                max="5"
-              />
-              <button onclick="scaleIngredients()" class="portionen">
-                Portionen
-              </button>
-            </div>
-          </div>
+      <span>Kartoffeln waschen, schälen und in dünne Scheiben oder kleine Würfel
+        schneiden. Optional: Kartoffeln am Vortag kochen und abkühlen lassen.
+        Zwiebel schälen und fein würfeln. Öl oder Butterschmalz in einer
+        großen Pfanne erhitzen. Kartoffeln darin bei mittlerer Hitze 10–15
+        Minuten braten, bis sie goldbraun und knusprig sind. Gelegentlich
+        wenden. Zwiebeln hinzufügen und 3–5 Minuten mitbraten, bis sie glasig
+        sind. Mit Salz, Pfeffer und optional Paprikapulver würzen. Nach
+        Belieben mit gehackter Petersilie bestreuen. Heiß servieren, z. B. als
+        Beilage oder mit einem Spiegelei.
+      </span>
+    </div>
 
-          <tr class="tdddark">
-            <td class="ingredient">500 g Kartoffeln (festkochend)</td>
-          </tr>
-
-          <tr>
-            <td class="ingredient">1 Zwiebel</td>
-          </tr>
-
-          <tr class="tdddark">
-            <td class="ingredient">3 EL Pflanzenöl oder Butterschmalz</td>
-          </tr>
-
-          <tr>
-            <td>Salz</td>
-          </tr>
-
-          <tr class="tdddark">
-            <td>Pfeffer</td>
-          </tr>
-        </table>
-      </section>
-      <div>
-        <h4 class="h4-preparation">Zubereitung</h4>
-
-        <div class="infos">
-          <div class="infos ig">
-            <img
-              class="icons"
-              src="img/icons/clock-regular.svg"
-              alt="Uhr Icon"
-            />ca. 15 Min.
-          </div>
-
-          <div class="infos ig margin-infos-ig">
-            <img
-              class="icons"
-              src="img/icons/clock-regular.svg"
-              alt="Gehirn Icon"
-            />Gesamtzeit ca. 15 Minuten
-          </div>
-        </div>
-
-        <span
-          >Kartoffeln waschen, schälen und in dünne Scheiben oder kleine Würfel
-          schneiden. Optional: Kartoffeln am Vortag kochen und abkühlen lassen.
-          Zwiebel schälen und fein würfeln. Öl oder Butterschmalz in einer
-          großen Pfanne erhitzen. Kartoffeln darin bei mittlerer Hitze 10–15
-          Minuten braten, bis sie goldbraun und knusprig sind. Gelegentlich
-          wenden. Zwiebeln hinzufügen und 3–5 Minuten mitbraten, bis sie glasig
-          sind. Mit Salz, Pfeffer und optional Paprikapulver würzen. Nach
-          Belieben mit gehackter Petersilie bestreuen. Heiß servieren, z. B. als
-          Beilage oder mit einem Spiegelei.
-        </span>
+    <div>
+      <h4 class="receipt-fontsize">Rezept erstellt von</h4>
+      <div class="navkünstler">
+        <img class="profile" src="img/tim.jpeg" alt="Bild des Erstellers" />
+        <span class="name">Tim</span>
       </div>
+    </div>
+  </main>
 
-      <div>
-        <h4 class="receipt-fontsize">Rezept erstellt von</h4>
-        <div class="navkünstler">
-          <img class="profile" src="img/tim.jpeg" alt="Bild des Erstellers" />
-          <span class="name">Tim</span>
-        </div>
-      </div>
-    </main>
+  <footer class="just-padding"></footer>
+</body>
 
-    <footer class="just-padding"></footer>
-  </body>
 </html>
