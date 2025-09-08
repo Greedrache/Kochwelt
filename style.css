@@ -288,6 +288,18 @@ main {
   margin-top: 20px;
 }
 
+@media (max-width: 1300px) {
+  .kontaktmain {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+  }
+
+  header {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .wasistbesser {
     flex-direction: column;
@@ -379,17 +391,6 @@ main {
   }
 }
 
-@media (max-width: 1300px) {
-  .kontaktmain {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 100px;
-  }
-
-  header {
-    font-size: 20px;
-  }
-}
 
 @media (min-width: 769px) and (max-width: 1299px) {
   .kontaktmain {
@@ -438,7 +439,7 @@ main {
     flex-direction: column;
     align-items: center;
   }
-}
+
 nav ul li {
   width: 100%;
   padding: 15px 0px;
@@ -460,7 +461,7 @@ nav ul {
   height: 3px;
   background-color: black;
 }
-@media (max-width: 600px) {
+
   .burgericon {
     display: block;
   }
