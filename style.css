@@ -23,6 +23,7 @@ body {
   margin-bottom: 4px;
   font: bold;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .divlink {
@@ -32,6 +33,7 @@ body {
   font: bold;
   font-weight: 700;
   margin-right: 30px;
+  white-space: nowrap;
 }
 
 .divlink:hover {
@@ -391,7 +393,6 @@ main {
   }
 }
 
-
 @media (min-width: 769px) and (max-width: 1299px) {
   .kontaktmain {
     margin-left: 100px;
@@ -434,7 +435,7 @@ main {
     justify-content: center;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
