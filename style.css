@@ -42,7 +42,7 @@ body {
   color: rgb(0, 128, 0);
   text-decoration: underline;
   text-decoration-thickness: 5px;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .logo {
@@ -106,8 +106,9 @@ h2 {
   display: flex;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 30px;
-  padding: 80px;
+
+  padding: 65px;
+  align-items: center;
 }
 
 .bratkartoffelnimg {
@@ -144,11 +145,12 @@ h2 {
   background-color: rgb(0, 128, 0);
   padding: 10px 20px;
   text-decoration: none;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .abstand {
   margin-right: 50px;
+  text-align: center;
 }
 
 .kontaktmargin {
@@ -181,7 +183,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 h3 {
@@ -287,219 +289,12 @@ td {
 
 main {
   flex: 1;
-  margin-bottom: 64px;
 }
 
 .untereinander {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-
-@media (max-width: 1300px) {
-  .kontaktmain {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 100px;
-  }
-
-  header {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1299px) {
-  .kontaktmain {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-  }
-  .abstand {
-    margin-right: 0;
-    font-size: 14px;
-  }
-  .bratkartoffelntext {
-    gap: 20px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .bratkartoffelnimg {
-    width: 700px;
-    height: 400px;
-  }
-
-  .gerichtsvorschlag {
-    flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 64px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .wasistbesser {
-    flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 30px;
-    justify-self: center;
-    display: flex;
-    align-items: center;
-    margin-top: 18px;
-  }
-
-  .pizzaimg {
-    margin-top: 60px;
-    padding-bottom: 24px;
-  }
-}
-@media (max-width: 992px) {
-  .wasistbesser {
-    padding: 1px;
-    text-align: center;
-  }
-  .abstand {
-    font-size: 14px;
-    margin-right: 0;
-    margin-top: 19px;
-  }
-  .gerichtsvorschlag {
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 64px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .bratkartoffelntext {
-    align-items: center;
-    text-align: center;
-  }
-
-  .kontaktmain {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-  }
-
-  .rezeptmain {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-  }
-
-  .impressummain {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .divlinkcontainer {
-    margin-right: 20px;
-    margin-bottom: 4px;
-    margin-left: 20px;
-  }
-
-  .logo {
-    padding: 10px;
-    height: 60px;
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .gerichte {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .maincontainerimg {
-    justify-content: center;
-  }
-
-  .bratkartoffelnimg {
-    width: 400px;
-    height: auto;
-  }
-
-  .mitte {
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .pizzaimg {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .insta {
-    width: 120px;
-    height: 120px;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    width: 100%;
-    padding: 15px 0px;
-    justify-content: center;
-  }
-  nav ul {
-    display: none;
-    justify-content: center;
-  }
-
-  .burgericon {
-    width: 30px;
-    height: 30px;
-    display: none;
-  }
-  .burgericon div {
-    width: 90%;
-    margin: 7px 5%;
-    height: 3px;
-    background-color: black;
-  }
-
-  .burgericon {
-    display: block;
-  }
-}
-
-@media (max-width: 540px) {
-  h2 {
-    font-size: 20px;
-    padding-top: 20px;
-  }
-  .abstand {
-    font-size: 14px;
-  }
-  .pizzaimg {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 435px) {
-  .bratkartoffelnimg {
-    width: 250px;
-    height: auto;
-  }
-  .infos {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
 
 @font-face {
@@ -678,4 +473,289 @@ h2 {
   margin-top: 81px;
 
   background-color: rgb(99 99 99);
+}
+.infos {
+  align-items: center;
+}
+.side-info-font {
+  margin: 0;
+}
+@media (max-width: 1300px) {
+  .kontaktmain {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+  }
+
+  header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .kontaktmain {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+  .abstand {
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .bratkartoffelntext {
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bratkartoffelnimg {
+    width: 700px;
+    height: 400px;
+  }
+
+  .gerichtsvorschlag {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 64px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wasistbesser {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+
+  .pizzaimg {
+    margin-top: 60px;
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .wasistbesser {
+    padding: 1px;
+    text-align: center;
+  }
+  .abstand {
+    font-size: 14px;
+    margin-right: 0;
+    margin-top: 19px;
+  }
+  .gerichtsvorschlag {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 64px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bratkartoffelntext {
+    align-items: center;
+    text-align: center;
+  }
+
+  .kontaktmain {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+
+  .rezeptmain {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+
+  .impressummain {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .divlinkcontainer {
+    margin-right: 20px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+  }
+
+  .logo {
+    padding: 10px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .gerichte {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .maincontainerimg {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .bratkartoffelnimg {
+    width: 400px;
+    height: auto;
+  }
+
+  .mitte {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pizzaimg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .insta {
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+  }
+  .lustaufwasneues {
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-weight: 500px;
+  }
+  .bratkartoffelnimg {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 15px 0px;
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+    justify-content: center;
+  }
+
+  .burgericon {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+  .burgericon div {
+    width: 90%;
+    margin: 7px 5%;
+    height: 3px;
+    background-color: black;
+  }
+
+  .burgericon {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  h2 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .abstand {
+    font-size: 14px;
+  }
+  .pizzaimg {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .bratkartoffelnimg {
+    margin-left: 0;
+  }
+  .h2-font {
+    font-size: 22px;
+  }
+  .gerichte {
+    padding: 28px;
+  }
+  .first-container {
+    text-align: center;
+  }
+  .h1-position {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .infos {
+    margin-top: 13px;
+  }
+  .ig {
+    padding: 6px 10px;
+  }
+  .side-info-font {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 435px) {
+  .bratkartoffelnimg {
+    width: 250px;
+    height: auto;
+  }
+  .infos {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  h2 {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+  .abstand {
+    font-size: 13px;
+  }
+  .pizzaimg {
+    margin-bottom: 16px;
+  }
+  .bratkartoffelntext {
+    gap: 0;
+    padding-left: 0;
+  }
+  .bratkartoffelnimg {
+    margin-left: 0;
+  }
+  .gerichtsvorschlag {
+    margin: 38px 20px;
+  }
+}
+@media (max-width: 490px) {
+  .ig {
+    padding: 4px 10px;
+  }
+  .icons {
+    width: 13px;
+    height: 13px;
+  }
+  .side-info-font {
+    font-size: 9px;
+  }
+  .margin-infos-ig {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
