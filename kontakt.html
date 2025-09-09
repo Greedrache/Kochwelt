@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Kochwelt Kontakt</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/logo_small.png" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -20,9 +20,9 @@
             <div></div>
           </div>
         </label>
-        <a href="./index.html"
-          ><img class="logo" src="img/logo.png" alt="Unser Logo"
-        /></a>
+        <a href="./index.html">
+          <img class="logo" src="img/logo.png" alt="Unser Logo" />
+        </a>
 
         <ul class="divlinkcontainer">
           <li><a class="divlink" href="./index.html">Start</a></li>
@@ -50,28 +50,41 @@
                 class="inputfeld"
                 type="text"
                 name="name"
+                required
+                oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein (mindestens 2 Zeichen).')"
+                oninput="this.setCustomValidity('')"
               />
             </label>
 
             <label for="email" class="untereinander">
               Deine Email:
-              <input id="email" class="inputfeld" type="email" name="email" />
+              <input
+                id="email"
+                class="inputfeld"
+                type="email"
+                name="email"
+                required
+                oninvalid="this.setCustomValidity('Bitte gib eine gültige E-Mail-Adresse ein.')"
+                oninput="this.setCustomValidity('')"
+              />
             </label>
 
             <label for="answer" class="untereinander">
               Deine Antwort:
               <textarea
                 id="answer"
-                minlength="1"
+                minlength="10"
                 class="inputfeld messagefeld"
                 name="message"
+                required
+                oninvalid="this.setCustomValidity('Bitte gib eine Nachricht ein (mindestens 10 Zeichen).')"
+                oninput="this.setCustomValidity('')"
               ></textarea>
             </label>
 
             <button class="sendbutton" type="submit">Abschicken</button>
           </form>
         </div>
-      </div>
       </div>
     </main>
 

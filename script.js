@@ -69,20 +69,46 @@ function scaleIngredients() {
         return newText.trim();
     }
 
+function sendMail(event) {
+  event.preventDefault();
 
-    function sendMail(event){﻿
-    event.preventDefault();
-    const data = new FormData(event.target);
+  const form = event.target;
+  const data = new FormData(form);
 
-    fetch("https://formspree.io/f/xeolvqvv", {
-        method: "POST",
-        body: new FormData(event.target),
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(() => {
+  const name = form.querySelector("#name").value.trim();
+  const email = form.querySelector("#email").value.trim();
+  const message = form.querySelector("#answer").value.trim();
+
+  // Zusätzliche Validierung für bessere Benutzerfreundlichkeit
+  if (!name || name.length < 2) {
+    alert("Bitte gib deinen Namen ein (mindestens 2 Zeichen).");
+    return;
+  }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert("Bitte gib eine gültige E-Mail-Adresse ein.");
+    return;
+  }
+  if (!message || message.length < 10) {
+    alert("Bitte gib eine Nachricht ein (mindestens 10 Zeichen).");
+    return;
+  }
+
+  fetch("https://formspree.io/f/xeolvqvv", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
         window.location.href = "./send_mail.html";
-    }).catch((error) => {
-        console.log(error);
+      } else {
+        throw new Error("Fehler beim Senden des Formulars.");
+      }
+    })
+    .catch((error) => {
+      console.error("Fehler:", error);
+      alert("Es gab ein Problem beim Senden deiner Nachricht. Bitte versuche es erneut.");
     });
 }
