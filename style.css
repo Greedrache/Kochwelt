@@ -42,6 +42,7 @@ body {
   color: rgb(0, 128, 0);
   text-decoration: underline;
   text-decoration-thickness: 5px;
+  transform: scale(1.05); 
 }
 
 .logo {
@@ -143,6 +144,7 @@ h2 {
   background-color: rgb(0, 128, 0);
   padding: 10px 20px;
   text-decoration: none;
+  transform: scale(1.05); 
 }
 
 .abstand {
@@ -179,6 +181,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  transform: scale(1.05); 
 }
 
 h3 {

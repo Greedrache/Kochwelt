@@ -1,96 +1,75 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt Kontakt</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/logo_small.png" />
-    <script src="script.js" defer></script>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="navigation" />
-        <label for="navigation" title="Navigation öffnen">
-          <div class="burgericon">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </label>
-        <a href="./index.html">
-          <img class="logo" src="img/logo.png" alt="Unser Logo" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt Kontakt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo_small.png" />
+  <script src="script.js" defer></script>
+</head>
 
-        <ul class="divlinkcontainer">
-          <li><a class="divlink" href="./index.html">Start</a></li>
-          <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
-          <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
-          <li><a class="divlink" href="./impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div class="contact-section">
-        <div class="kontaktmain">
-          <h3>Kontaktiere uns</h3>
-          <form
-            onsubmit="sendMail(event)"
-            action="https://formspree.io/f/xeolvqvv"
-            method="POST"
-          >
-            <label for="name" class="untereinander">
-              Dein Name:
-              <input
-                id="name"
-                minlength="2"
-                class="inputfeld"
-                type="text"
-                name="name"
-                required
-                oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein (mindestens 2 Zeichen).')"
-                oninput="this.setCustomValidity('')"
-              />
-            </label>
-
-            <label for="email" class="untereinander">
-              Deine Email:
-              <input
-                id="email"
-                class="inputfeld"
-                type="email"
-                name="email"
-                required
-                oninvalid="this.setCustomValidity('Bitte gib eine gültige E-Mail-Adresse ein.')"
-                oninput="this.setCustomValidity('')"
-              />
-            </label>
-
-            <label for="answer" class="untereinander">
-              Deine Antwort:
-              <textarea
-                id="answer"
-                minlength="10"
-                class="inputfeld messagefeld"
-                name="message"
-                required
-                oninvalid="this.setCustomValidity('Bitte gib eine Nachricht ein (mindestens 10 Zeichen).')"
-                oninput="this.setCustomValidity('')"
-              ></textarea>
-            </label>
-
-            <button class="sendbutton" type="submit">Abschicken</button>
-          </form>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="navigation" />
+      <label for="navigation" title="Navigation öffnen">
+        <div class="burgericon">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </div>
-    </main>
+      </label>
+      <a href="./index.html">
+        <img class="logo" src="img/logo.png" alt="Unser Logo" />
+      </a>
 
-    <footer class="contact-footer">
-      <img class="footer-logo" src="./img/logowhite.png" alt="" />
-      <img class="footer-social" src="./img/instagram_white.png" alt="" />
-    </footer>
-  </body>
+      <ul class="divlinkcontainer">
+        <li><a class="divlink" href="./index.html">Start</a></li>
+        <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
+        <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="divlink" href="./impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-section">
+      <div class="kontaktmain">
+        <h3>Kontaktiere uns</h3>
+        <form onsubmit="sendMail(event)" action="https://formspree.io/f/xeolvqvv" method="POST">
+          <label for="name" class="untereinander">
+            Dein Name:
+            <input id="name" minlength="2" class="inputfeld" type="text" name="name" required
+              oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein (mindestens 2 Zeichen).')"
+              oninput="this.setCustomValidity('')" />
+          </label>
+
+          <label for="email" class="untereinander">
+            Deine Email:
+            <input id="email" class="inputfeld" type="email" name="email" required
+              oninvalid="this.setCustomValidity('Bitte gib eine gültige E-Mail-Adresse ein.')"
+              oninput="this.setCustomValidity('')" />
+          </label>
+
+          <label for="answer" class="untereinander">
+            Deine Antwort:
+            <textarea id="answer" minlength="10" class="inputfeld messagefeld" name="message" required
+              oninvalid="this.setCustomValidity('Bitte gib eine Nachricht ein (mindestens 10 Zeichen).')"
+              oninput="this.setCustomValidity('')"></textarea>
+          </label>
+
+          <button class="sendbutton" type="submit">Abschicken</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="contact-footer">
+    <img class="footer-logo" src="./img/logowhite.png" alt="" />
+    <img class="footer-social" src="./img/instagram_white.png" alt="" />
+  </footer>
+</body>
+
 </html>
