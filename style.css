@@ -524,8 +524,8 @@ h2 {
 
   .wasistbesser {
     flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
     padding: 30px;
     justify-self: center;
     display: flex;
@@ -688,6 +688,7 @@ h2 {
   }
   .h2-font {
     font-size: 22px;
+    padding-top: 32px;
   }
   .gerichte {
     padding: 28px;
@@ -709,6 +710,13 @@ h2 {
     margin: 0;
     font-size: 14px;
   }
+  .rezeptimg {
+    height: 130px;
+  }
+  .button-padding {
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 435px) {
@@ -720,7 +728,62 @@ h2 {
     align-items: center;
     text-align: center;
   }
+  .table-container {
+    margin-top: 24px;
+  }
+  .buttoninput {
+    width: 100px;
+    height: 29px;
+  }
+  .portionen {
+    height: 34px;
+    width: 94px;
+  }
+  td {
+    padding: 16px;
+  }
+  .ingredient-color {
+    font-size: 14px;
+  }
+  .button-input {
+    padding-left: 12px;
+  }
+  td {
+    font-size: 12px;
+  }
+  .icons {
+    width: 13px;
+    height: 13px;
+  }
+  .side-info-font {
+    font-size: 9px;
+  }
+  .margin-infos-ig {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .h4-preparation {
+    margin-right: 28px;
+    font-size: 20px;
+  }
+  .span-font {
+    font-size: 14px;
+  }
+  .name {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .profile {
+    width: 80px;
+    height: 80px;
+  }
+  .receipt-fontsize {
+    font-size: 20px;
+    margin-top: 42px;
+    margin-bottom: 20px;
+  }
 }
+
 @media (max-width: 420px) {
   h2 {
     font-size: 14px;
@@ -746,16 +809,5 @@ h2 {
 @media (max-width: 490px) {
   .ig {
     padding: 4px 10px;
-  }
-  .icons {
-    width: 13px;
-    height: 13px;
-  }
-  .side-info-font {
-    font-size: 9px;
-  }
-  .margin-infos-ig {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
