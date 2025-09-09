@@ -626,18 +626,18 @@ hr {
 h4 {
   margin-bottom: 10px;
 }
-.contact-footer {
-  padding: 38px 200px;
+footer {
   background-color: #000000cc;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 96px;
 }
 .footer-logo {
-  height: 65px;
+  height: 64px;
 }
 .footer-social {
-  height: 40px;
+  height: 36px;
 }
 .contact-section {
   padding-bottom: 270px;
