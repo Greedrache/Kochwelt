@@ -757,6 +757,9 @@ h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
+  .gerichte {
+    padding: 36px;
+  }
 }
 
 @media (max-width: 435px) {
