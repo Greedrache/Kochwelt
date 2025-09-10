@@ -427,6 +427,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 96px;
+  margin-top: 64px ;
 }
 .footer-logo {
   height: 64px;
