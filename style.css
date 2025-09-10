@@ -149,7 +149,7 @@ h2 {
 }
 
 .abstand {
-  margin-right: 50px;
+  margin-right: 110px;
   text-align: center;
 }
 
@@ -223,6 +223,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 36px;
 }
 
 h4 {
@@ -424,9 +425,10 @@ h4 {
 footer {
   background-color: #000000cc;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 96px;
+
+  padding: 27px 160px;
 }
 .footer-logo {
   height: 64px;
@@ -480,6 +482,7 @@ h2 {
 .side-info-font {
   margin: 0;
 }
+
 @media (max-width: 1300px) {
   .kontaktmain {
     margin-left: 300px;
@@ -635,6 +638,9 @@ h2 {
   .bratkartoffelnimg {
     margin-left: 0;
   }
+  footer {
+    padding: 27px 58px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -668,8 +674,21 @@ h2 {
   .burgericon {
     display: block;
   }
+  .pizzaimg {
+    margin-bottom: 24px;
+  }
 }
-
+@media (max-width: 660px) {
+  .footer-logo {
+    height: 54px;
+  }
+  .footer-social {
+    height: 31px;
+  }
+  footer {
+    padding: 24px 32px;
+  }
+}
 @media (max-width: 540px) {
   h2 {
     font-size: 20px;
@@ -679,7 +698,7 @@ h2 {
     font-size: 14px;
   }
   .pizzaimg {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 200px;
     height: 200px;
   }
@@ -782,6 +801,15 @@ h2 {
     font-size: 20px;
     margin-top: 42px;
     margin-bottom: 20px;
+  }
+  footer {
+    padding: 22px 16px;
+  }
+  .footer-logo {
+    height: 42px;
+  }
+  .footer-social {
+    height: 25px;
   }
 }
 
