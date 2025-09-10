@@ -85,9 +85,7 @@ body {
 .maincontainer {
   background-color: rgb(241, 238, 238);
   justify-content: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 h2 {
