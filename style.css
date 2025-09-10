@@ -686,6 +686,12 @@ h2 {
   footer {
     padding: 24px 32px;
   }
+  .contact-section {
+    padding-top: 150px;
+  }
+  .inputfeld {
+    width: 412px;
+  }
 }
 @media (max-width: 540px) {
   h2 {
@@ -734,6 +740,25 @@ h2 {
   .button-padding {
     margin-top: 56px;
     margin-bottom: 20px;
+  }
+  .contact-section {
+    padding-bottom: 92px;
+  }
+  .messagefeld {
+    height: 195px;
+  }
+  h3 {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+  .inputfeld {
+    width: 270px;
+  }
+  .contact-section {
+    padding-top: 64px;
+  }
+  .kontaktmain {
+    padding: 12px;
   }
 }
 
@@ -839,10 +864,8 @@ h2 {
   }
 }
 
-
-
-@media(min-width: 1000px) {
-  .divlinkcontainer{
+@media (min-width: 1000px) {
+  .divlinkcontainer {
     gap: 25px;
   }
 }
