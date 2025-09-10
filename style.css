@@ -699,9 +699,10 @@ h2 {
   .h1-position {
     font-size: 24px;
     margin-bottom: 28px;
+    text-align: center;
   }
   .infos {
-    margin-top: 13px;
+    margin-top: 8px;
   }
   .ig {
     padding: 6px 10px;
@@ -743,7 +744,7 @@ h2 {
     padding: 16px;
   }
   .ingredient-color {
-    font-size: 14px;
+    font-size: 11px;
   }
   .button-input {
     padding-left: 12px;
