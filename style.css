@@ -840,11 +840,11 @@ h2 {
 
 @media (max-width: 420px) {
   h2 {
-    font-size: 14px;
+    font-size: 18px;
     padding-top: 16px;
   }
   .abstand {
-    font-size: 13px;
+    font-size: 16px;
   }
   .pizzaimg {
     margin-bottom: 16px;
