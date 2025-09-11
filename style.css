@@ -69,7 +69,7 @@ body {
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 10px;
-  display: flex;
+
   justify-content: center;
 }
 
@@ -758,9 +758,7 @@ h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .gerichte {
-    padding: 36px;
-  }
+
   .maincontainer {
     align-items: center;
   }
@@ -859,7 +857,7 @@ h2 {
     margin-left: 0;
   }
   .gerichtsvorschlag {
-    margin: 38px 20px;
+    margin: 54px 20px;
   }
 }
 @media (max-width: 490px) {
