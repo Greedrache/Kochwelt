@@ -14,8 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .divlinkcontainer {
@@ -292,6 +290,8 @@ td {
 
 main {
   flex: 1;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .untereinander {
