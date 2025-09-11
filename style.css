@@ -17,8 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .divlinkcontainer {
@@ -83,7 +81,7 @@ body {
   gap: 16px;
   text-align: center;
   justify-content: space-around;
-  max-width: 1700px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -114,7 +112,7 @@ h2 {
   display: flex;
   margin-left: 150px;
   margin-right: 150px;
-  max-width: 1700px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 65px;
   align-items: center;
@@ -132,7 +130,7 @@ h2 {
   gap: 32px;
 
   align-items: start;
-  max-width: 1700px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 64px 0;
   text-align: left;
@@ -299,8 +297,6 @@ td {
 
 main {
   flex: 1;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .untereinander {
@@ -493,7 +489,7 @@ h2 {
   width: 100%;
 }
 .footer-content {
-  max-width: 1920px;
+  max-width: 1680px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
