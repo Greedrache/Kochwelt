@@ -785,16 +785,16 @@ h2 {
     width: 94px;
   }
   td {
-    padding: 16px;
+    padding: 18px;
   }
   .ingredient-color {
     font-size: 11px;
   }
   .button-input {
-    padding-left: 12px;
+    padding-left: 11px;
   }
   td {
-    font-size: 12px;
+    font-size: 16px;
   }
   .icons {
     width: 13px;
@@ -840,11 +840,11 @@ h2 {
 
 @media (max-width: 420px) {
   h2 {
-    font-size: 18px;
-    padding-top: 16px;
+    font-size: 16px;
+    padding-top: 18px;
   }
   .abstand {
-    font-size: 16px;
+    font-size: 14px;
   }
   .pizzaimg {
     margin-bottom: 16px;
