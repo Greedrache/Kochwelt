@@ -1,11 +1,14 @@
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  top: 0;
-  right: 0;
-  left: 0;
   box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.2);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  max-width: 1920px;
+
   margin: 0 auto;
 }
 
@@ -80,6 +83,8 @@ body {
   gap: 16px;
   text-align: center;
   justify-content: space-around;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .maincontainer {
@@ -102,13 +107,15 @@ h2 {
   aspect-ratio: 1/1;
   border-radius: 10px;
   display: flex;
+  margin-right: 130px;
 }
 
 .wasistbesser {
   display: flex;
   margin-left: 150px;
   margin-right: 150px;
-
+  max-width: 1700px;
+  margin: 0 auto;
   padding: 65px;
   align-items: center;
 }
@@ -116,19 +123,18 @@ h2 {
 .bratkartoffelnimg {
   height: 300px;
   width: 400px;
-  margin-left: 81px;
+  margin-left: 150px;
   border-radius: 10px;
 }
 
 .gerichtsvorschlag {
   display: flex;
   gap: 32px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 64px;
+
   align-items: start;
-  margin-bottom: 64px;
-  margin: 64px 150px;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 64px 0;
   text-align: left;
 }
 
@@ -153,6 +159,7 @@ h2 {
 .abstand {
   margin-right: 110px;
   text-align: center;
+  margin-left: 130px;
 }
 
 .kontaktmargin {
@@ -425,10 +432,6 @@ h4 {
 }
 footer {
   background-color: #000000cc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 27px 160px;
 }
 .footer-logo {
   height: 64px;
@@ -482,6 +485,19 @@ h2 {
 .side-info-font {
   margin: 0;
 }
+.page-wrapper {
+  width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+.footer-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 130px;
+}
 
 @media (max-width: 1300px) {
   header {
@@ -493,6 +509,7 @@ h2 {
   .abstand {
     margin-right: 0;
     font-size: 14px;
+    margin-left: 0;
   }
   .bratkartoffelntext {
     gap: 20px;
@@ -528,6 +545,7 @@ h2 {
   .pizzaimg {
     margin-top: 60px;
     padding-bottom: 24px;
+    margin-right: 0;
   }
 }
 @media (max-width: 992px) {
@@ -627,7 +645,7 @@ h2 {
   .bratkartoffelnimg {
     margin-left: 0;
   }
-  footer {
+  .footer-content {
     padding: 27px 58px;
   }
   .contact-section {
@@ -640,7 +658,9 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-
+  header nav {
+    align-items: center;
+  }
   nav ul li {
     width: 100%;
     padding: 15px 0px;
@@ -677,7 +697,7 @@ h2 {
   .footer-social {
     height: 31px;
   }
-  footer {
+  .footer-content {
     padding: 24px 32px;
   }
   .contact-section {
@@ -827,7 +847,7 @@ h2 {
     margin-top: 42px;
     margin-bottom: 20px;
   }
-  footer {
+  .footer-content {
     padding: 22px 16px;
   }
   .footer-logo {
