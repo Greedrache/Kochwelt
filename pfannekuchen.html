@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,41 +34,42 @@
     </header>
 
     <main class="rezeptmain">
-      <h1 class="h1-position">Pfannkuchen</h1>
-      <img
-        class="rezeptimg"
-        src="img/pfannkuchen.jpeg"
-        alt="Bild von Bratkartoffeln"
-      />
+      <section class="first-container">
+        <h1 class="h1-position">Pfannkuchen</h1>
+        <img
+          class="rezeptimg"
+          src="img/pfannkuchen.jpeg"
+          alt="Bild von Pfannkuchen"
+        />
 
-      <div class="infos">
-        <div class="infos ig">
-          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
-          <p class="side-info-font">20 Min.</p>
+        <div class="infos">
+          <div class="infos ig">
+            <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
+            <p class="side-info-font">20 Min.</p>
+          </div>
+
+          <div class="infos ig margin-infos-ig">
+            <img
+              class="icons"
+              src="img/icons/brain-solid.svg"
+              alt="Gehirn Icon"
+            />
+            <p class="side-info-font">Schwer</p>
+          </div>
+
+          <div class="infos ig">
+            <img
+              class="icons"
+              src="img/icons/calendar-alt-regular.svg"
+              alt="Kalender Icon"
+            />
+            <p class="side-info-font">24.05.2011</p>
+          </div>
         </div>
+      </section>
 
-        <div class="infos ig margin-infos-ig">
-          <img
-            class="icons"
-            src="img/icons/brain-solid.svg"
-            alt="Gehirn Icon"
-          />
-          <p class="side-info-font">Schwer</p>
-        </div>
-
-        <div class="infos ig">
-          <img
-            class="icons"
-            src="img/icons/calendar-alt-regular.svg"
-            alt="Kalernder Icon"
-          />
-          <p class="side-info-font">24.05.2011</p>
-        </div>
-      </div>
-
-      <div class="table-container">
+      <section class="table-container">
         <hr />
-
         <table id="ingredients-table">
           <div class="portions-input">
             <label for="portions" class="ingredient-color">Zutaten für</label>
@@ -86,10 +87,11 @@
                 Portionen
               </button>
             </div>
+            <div id="error-message" style="color: red; font-size: 0.9em; margin-top: 5px; display: none;"></div>
           </div>
 
           <tr class="tdddark">
-            <td class="ingredient" data-original="200g Mehl">200g Mehl</td>
+            <td class="ingredient" data-original="200 g Mehl">200 g Mehl</td>
           </tr>
 
           <tr>
@@ -107,7 +109,7 @@
           </tr>
 
           <tr class="tdddark">
-            <td>1 Prise Salz</td>
+            <td class="ingredient" data-original="1 Prise Salz">1 Prise Salz</td>
           </tr>
 
           <tr>
@@ -123,15 +125,14 @@
           </tr>
 
           <tr>
-            <td>Etwas Butter oder Öl zum Braten</td>
+            <td class="ingredient" data-original="Etwas Butter oder Öl zum Braten">Etwas Butter oder Öl zum Braten</td>
           </tr>
 
           <tr class="tdddark">
-            <td>Ahornsirup, Obst oder Puderzucker (optional, zum Servieren)</td>
+            <td class="ingredient" data-original="Ahornsirup, Obst oder Puderzucker (optional, zum Servieren)">Ahornsirup, Obst oder Puderzucker (optional, zum Servieren)</td>
           </tr>
         </table>
-      </div>
-      <div></div>
+      </section>
 
       <div>
         <h4 class="h4-preparation">Zubereitung</h4>
@@ -149,7 +150,7 @@
             <img
               class="icons"
               src="img/icons/clock-regular.svg"
-              alt="Gehirn Icon"
+              alt="Uhr Icon"
             />
             <p class="side-info-font">Gesamtzeit ca. 20 Minuten</p>
           </div>

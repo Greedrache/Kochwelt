@@ -1,32 +1,60 @@
-function scaleIngredients() {
+function showError(message) {
+    const errorDiv = document.getElementById('error-message');
+    errorDiv.textContent = message;
+    errorDiv.style.display = 'block';
+    setTimeout(() => {
+        errorDiv.style.display = 'none';
+    }, 3000);
+}
+
+function validatePortions() {
     const portionsInput = document.getElementById('portions');
-    const portions = Math.abs(parseInt(portionsInput.value) || 1); // Convert to positive, default to 1 if empty
-    const factor = portions; // Skalierungsfaktor
+    let portions = parseInt(portionsInput.value) || 1;
+    
+    if (portions < 1 || isNaN(portions)) {
+        showError('Portionen können nicht negativ sein. Mindestens 1 Portion.');
+        portionsInput.value = 1;
+        return false;
+    } else if (portions > 5) {
+        showError('Maximale Portionen: 5. Bitte wähle weniger.');
+        portionsInput.value = 5;
+        return false;
+    }
+    
+    document.getElementById('error-message').style.display = 'none';
+    return true;
+}
+
+function scaleIngredients() {
+    if (!validatePortions()) {
+        return;
+    }
+    
+    const portionsInput = document.getElementById('portions');
+    const portions = parseInt(portionsInput.value) || 1;
+    const factor = portions;
     
     const ingredients = document.querySelectorAll('.ingredient');
     
     ingredients.forEach(ingredientCell => {
-        let originalText = ingredientCell.dataset.original; // Originalwert holen
+        let originalText = ingredientCell.dataset.original;
         let scaledText = scaleIngredient(originalText, factor);
         ingredientCell.textContent = scaledText;
     });
 }
 
-// Hilfsfunktion: Parst und skaliert eine Zutat
 function scaleIngredient(text, factor) {
-    // Regex: Zahl (mit Dezimal oder Bruch), Einheit (optional), Rest
-    const match = text.match(/^(\d+(?:\.\d+)?(?:\/\d+)?)\s*([a-zA-ZäöüÄÖÜß]+)?\s*(.*)$/i);
+    const match = text.match(/^(\d+(?:\.\d+)?(?:\/\d+)?)\s*([a-zA-ZäöüÄÖÜßEL]+)?\s*(.*)$/i);
     
     if (!match) {
-        return text; // Kein Match, unverändert zurückgeben
+        return text;
     }
     
-    let quantityStr = match[1]; // z.B. "500", "1.5", "1/2"
-    let unit = match[2] ? match[2].toLowerCase() : ''; // z.B. "g", "löffel"
-    let name = match[3].trim(); // z.B. "Kartoffeln"
+    let quantityStr = match[1];
+    let unit = match[2] ? match[2].toLowerCase() : '';
+    let name = match[3].trim();
     
-    // Parse Quantity zu Float
-    let quantity = parseFloat(quantityStr.replace('/', '')); // Vereinfacht
+    let quantity;
     if (quantityStr.includes('/')) {
         const parts = quantityStr.split('/');
         quantity = parseFloat(parts[0]) / parseFloat(parts[1]);
@@ -34,39 +62,31 @@ function scaleIngredient(text, factor) {
         quantity = parseFloat(quantityStr);
     }
     
-    // Skaliere Quantity
+    if (isNaN(quantity)) {
+        return text;
+    }
+    
     let scaledQuantity = quantity * factor;
     
-    // Runde auf 2 Dezimalen, falls nötig
     if (Number.isInteger(scaledQuantity)) {
         scaledQuantity = Math.round(scaledQuantity);
     } else {
-        scaledQuantity = scaledQuantity.toFixed(2);
+        scaledQuantity = parseFloat(scaledQuantity.toFixed(2));
     }
     
-    // Einheiten-Umrechnung
     let scaledUnit = unit;
     if (unit === 'g' && scaledQuantity >= 1000) {
         scaledQuantity /= 1000;
         scaledUnit = 'kg';
-        if (!Number.isInteger(scaledQuantity)) {
-            scaledQuantity = scaledQuantity.toFixed(2);
-        }
     } else if (unit === 'ml' && scaledQuantity >= 1000) {
         scaledQuantity /= 1000;
         scaledUnit = 'l';
-        if (!Number.isInteger(scaledQuantity)) {
-            scaledQuantity = scaledQuantity.toFixed(2);
-        }
     }
     
-    // Baue neuen String
-    let newText = `${scaledQuantity}${scaledUnit ? scaledUnit : ''} ${name}`;
-    if (!scaledUnit && !name.includes(scaledQuantity)) {
-        newText = `${scaledQuantity} ${name}`;
-    }
+    let quantityDisplay = Number.isInteger(scaledQuantity) ? scaledQuantity.toString() : scaledQuantity.toFixed(2);
+    let newText = `${quantityDisplay}${scaledUnit ? ' ' + scaledUnit.toUpperCase() : ''} ${name}`.trim();
     
-    return newText.trim();
+    return newText;
 }
 
 function sendMail(event) {
@@ -79,7 +99,6 @@ function sendMail(event) {
     const email = form.querySelector("#email").value.trim();
     const message = form.querySelector("#answer").value.trim();
 
-    // Zusätzliche Validierung für bessere Benutzerfreundlichkeit
     if (!name || name.length < 2) {
         alert("Bitte gib deinen Namen ein (mindestens 2 Zeichen).");
         return;

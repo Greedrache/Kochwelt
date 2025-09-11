@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,38 +34,41 @@
     </header>
 
     <main class="rezeptmain">
-      <h1 class="h1-position">Salat</h1>
-      <img
-        class="rezeptimg"
-        src="img/salad.jpg"
-        alt="Bild von Bratkartoffeln"
-      />
+      <section class="first-container">
+        <h1 class="h1-position">Salat</h1>
+        <img
+          class="rezeptimg"
+          src="img/salad.jpg"
+          alt="Bild von Salat"
+        />
 
-      <div class="infos">
-        <div class="infos ig">
-          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
-          <p class="side-info-font">10 Min.</p>
-        </div>
+        <div class="infos">
+          <div class="infos ig">
+            <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
+            <p class="side-info-font">10 Min.</p>
+          </div>
 
-        <div class="infos ig margin-infos-ig">
-          <img
-            class="icons"
-            src="img/icons/brain-solid.svg"
-            alt="Gehirn Icon"
-          />
-          <p class="side-info-font">Einfach</p>
-        </div>
+          <div class="infos ig margin-infos-ig">
+            <img
+              class="icons"
+              src="img/icons/brain-solid.svg"
+              alt="Gehirn Icon"
+            />
+            <p class="side-info-font">Einfach</p>
+          </div>
 
-        <div class="infos ig">
-          <img
-            class="icons"
-            src="img/icons/calendar-alt-regular.svg"
-            alt="Kalernder Icon"
-          />
-          <p class="side-info-font">05.03.2025</p>
+          <div class="infos ig">
+            <img
+              class="icons"
+              src="img/icons/calendar-alt-regular.svg"
+              alt="Kalender Icon"
+            />
+            <p class="side-info-font">05.03.2025</p>
+          </div>
         </div>
-      </div>
-      <div class="table-container">
+      </section>
+
+      <section class="table-container">
         <hr />
         <table id="ingredients-table">
           <div class="portions-input">
@@ -84,6 +87,7 @@
                 Portionen
               </button>
             </div>
+            <div id="error-message" style="color: red; font-size: 0.9em; margin-top: 5px; display: none;"></div>
           </div>
           <tr class="tdddark">
             <td class="ingredient" data-original="100 g gemischter Blattsalat">
@@ -122,14 +126,14 @@
           </tr>
 
           <tr>
-            <td>Salz, Pfeffer</td>
+            <td class="ingredient" data-original="Salz, Pfeffer">Salz, Pfeffer</td>
           </tr>
 
           <tr class="tdddark">
-            <td>1 Handvoll Croutons (optional)</td>
+            <td class="ingredient" data-original="1 Handvoll Croutons (optional)">1 Handvoll Croutons (optional)</td>
           </tr>
         </table>
-      </div>
+      </section>
 
       <div>
         <h4 class="h4-preparation">Zubereitung</h4>
@@ -147,7 +151,7 @@
             <img
               class="icons"
               src="img/icons/clock-regular.svg"
-              alt="Gehirn Icon"
+              alt="Uhr Icon"
             />
             <p class="side-info-font">Gesamtzeit ca. 10 Minuten</p>
           </div>
