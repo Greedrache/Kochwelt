@@ -1,195 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt Salat</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/logo_small.png" />
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="navigation" />
-        <label for="navigation" title="Navigation öffnen">
-          <div class="burgericon">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </label>
-        <a href="./index.html"
-          ><img class="logo" src="img/logo.png" alt="Unser Logo"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt Salat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo_small.png" />
+  <script src="script.js"></script>
+</head>
 
-        <ul class="divlinkcontainer">
-          <li><a class="divlink" href="./index.html">Start</a></li>
-          <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
-          <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
-          <li><a class="divlink" href="./impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="rezeptmain">
-      <section class="first-container">
-        <h1 class="h1-position">Salat</h1>
-        <img
-          class="rezeptimg"
-          src="img/salad.jpg"
-          alt="Bild von Salat"
-        />
-
-        <div class="infos">
-          <div class="infos ig">
-            <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
-            <p class="side-info-font">10 Min.</p>
-          </div>
-
-          <div class="infos ig margin-infos-ig">
-            <img
-              class="icons"
-              src="img/icons/brain-solid.svg"
-              alt="Gehirn Icon"
-            />
-            <p class="side-info-font">Einfach</p>
-          </div>
-
-          <div class="infos ig">
-            <img
-              class="icons"
-              src="img/icons/calendar-alt-regular.svg"
-              alt="Kalender Icon"
-            />
-            <p class="side-info-font">05.03.2025</p>
-          </div>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="navigation" />
+      <label for="navigation" title="Navigation öffnen">
+        <div class="burgericon">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </section>
+      </label>
+      <a href="./index.html"><img class="logo" src="img/logo.png" alt="Unser Logo" /></a>
 
-      <section class="table-container">
-        <hr />
-        <table id="ingredients-table">
-          <div class="portions-input">
-            <label for="portions" class="ingredient-color">Zutaten für</label>
-            <div class="button-input">
-              <input
-                class="buttoninput"
-                id="portions"
-                value="1"
-                step="1"
-                type="number"
-                min="1"
-                max="5"
-              />
-              <button onclick="scaleIngredients()" class="portionen">
-                Portionen
-              </button>
-            </div>
-            <div id="error-message" style="color: red; font-size: 0.9em; margin-top: 5px; display: none;"></div>
-          </div>
-          <tr class="tdddark">
-            <td class="ingredient" data-original="100 g gemischter Blattsalat">
-              100 g gemischter Blattsalat
-            </td>
-          </tr>
+      <ul class="divlinkcontainer">
+        <li><a class="divlink" href="./index.html">Start</a></li>
+        <li><a class="divlink" href="./rezept.html">Rezept des Tages</a></li>
+        <li><a class="divlink" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="divlink" href="./impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <tr>
-            <td class="ingredient" data-original="1 Tomate">1 Tomate</td>
-          </tr>
+  <main class="rezeptmain">
+    <section class="first-container">
+      <h1 class="h1-position">Salat</h1>
+      <img class="rezeptimg" src="img/salad.jpg" alt="Bild von Salat" />
 
-          <tr class="tdddark">
-            <td class="ingredient" data-original="1/2 Gurke">1/2 Gurke</td>
-          </tr>
-
-          <tr>
-            <td class="ingredient" data-original="50 g Feta-Käse (optional)">
-              50 g Feta-Käse (optional)
-            </td>
-          </tr>
-
-          <tr class="tdddark">
-            <td class="ingredient" data-original="2 EL Olivenöl">
-              2 EL Olivenöl
-            </td>
-          </tr>
-
-          <tr>
-            <td class="ingredient" data-original="1 EL Balsamico-Essig">
-              1 EL Balsamico-Essig
-            </td>
-          </tr>
-
-          <tr class="tdddark">
-            <td class="ingredient" data-original="1 TL Senf">1 TL Senf</td>
-          </tr>
-
-          <tr>
-            <td class="ingredient" data-original="Salz, Pfeffer">Salz, Pfeffer</td>
-          </tr>
-
-          <tr class="tdddark">
-            <td class="ingredient" data-original="1 Handvoll Croutons (optional)">1 Handvoll Croutons (optional)</td>
-          </tr>
-        </table>
-      </section>
-
-      <div>
-        <h4 class="h4-preparation">Zubereitung</h4>
-        <div class="infos">
-          <div class="infos ig">
-            <img
-              class="icons"
-              src="img/icons/clock-regular.svg"
-              alt="Uhr Icon"
-            />
-            <p class="side-info-font">ca. 10 Min.</p>
-          </div>
-
-          <div class="infos ig margin-infos-ig">
-            <img
-              class="icons"
-              src="img/icons/clock-regular.svg"
-              alt="Uhr Icon"
-            />
-            <p class="side-info-font">Gesamtzeit ca. 10 Minuten</p>
-          </div>
+      <div class="infos">
+        <div class="infos ig">
+          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
+          <p class="side-info-font">10 Min.</p>
         </div>
-        <span class="span-font">
-          Blattsalat waschen, trocken schleudern und in eine Schüssel geben.
-          Gemüse schneiden: Tomate und Gurke in kleine Stücke schneiden, Zwiebel
-          in feine Ringe schneiden. Alles zum Salat geben. Dressing zubereiten:
-          Olivenöl, Balsamico-Essig, Senf, Salz und Pfeffer in einer kleinen
-          Schüssel verrühren. Anrichten: Dressing über den Salat geben, gut
-          vermengen. Feta-Käse zerbröseln und Croutons darüber streuen (falls
-          verwendet). Servieren: Sofort genießen!
-        </span>
-      </div>
 
-      <div>
-        <h4 class="receipt-fontsize">Rezept erstellt von</h4>
-        <div class="navkünstler">
-          <img
-            class="profile"
-            src="img/profile.png"
-            alt="Bild des Erstellers"
-          />
-          <span class="name">Tim Draaijer</span>
+        <div class="infos ig margin-infos-ig">
+          <img class="icons" src="img/icons/brain-solid.svg" alt="Gehirn Icon" />
+          <p class="side-info-font">Einfach</p>
+        </div>
+
+        <div class="infos ig">
+          <img class="icons" src="img/icons/calendar-alt-regular.svg" alt="Kalender Icon" />
+          <p class="side-info-font">05.03.2025</p>
         </div>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <a href="./index.html"
-        ><img class="footer-logo" src="./img/logowhite.png" alt="Unser Logo"
-      /></a>
-      <a href="https://www.instagram.com/" target="_blank"
-        ><img
-          class="footer-social"
-          src="./img/instagram_white.png"
-          alt="Insta Logo"
-      /></a>
-    </footer>
-  </body>
+    <section class="table-container">
+      <hr />
+      <table id="ingredients-table">
+        <div class="portions-input">
+          <label for="portions" class="ingredient-color">Zutaten für</label>
+          <div class="button-input">
+            <input class="buttoninput" id="portions" value="1" step="1" type="number" min="1" max="5" />
+            <button onclick="scaleIngredients()" class="portionen">
+              Portionen
+            </button>
+          </div>
+          <div id="error-message" style="color: red; font-size: 0.9em; margin-top: 5px; display: none;"></div>
+        </div>
+        <tr class="tdddark">
+          <td class="ingredient" data-original="100 g gemischter Blattsalat">
+            100 g gemischter Blattsalat
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ingredient" data-original="1 Tomate">1 Tomate</td>
+        </tr>
+
+        <tr class="tdddark">
+          <td class="ingredient" data-original="1/2 Gurke">1/2 Gurke</td>
+        </tr>
+
+        <tr>
+          <td class="ingredient" data-original="50 g Feta-Käse (optional)">
+            50 g Feta-Käse (optional)
+          </td>
+        </tr>
+
+        <tr class="tdddark">
+          <td class="ingredient" data-original="2 EL Olivenöl">
+            2 EL Olivenöl
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ingredient" data-original="1 EL Balsamico-Essig">
+            1 EL Balsamico-Essig
+          </td>
+        </tr>
+
+        <tr class="tdddark">
+          <td class="ingredient" data-original="1 TL Senf">1 TL Senf</td>
+        </tr>
+
+        <tr>
+          <td class="ingredient" data-original="Salz, Pfeffer">Salz, Pfeffer</td>
+        </tr>
+
+        <tr class="tdddark">
+          <td class="ingredient" data-original="1 Handvoll Croutons (optional)">1 Handvoll Croutons (optional)</td>
+        </tr>
+      </table>
+    </section>
+
+    <div>
+      <h4 class="h4-preparation">Zubereitung</h4>
+      <div class="infos">
+        <div class="infos ig">
+          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
+          <p class="side-info-font">ca. 10 Min.</p>
+        </div>
+
+        <div class="infos ig margin-infos-ig">
+          <img class="icons" src="img/icons/clock-regular.svg" alt="Uhr Icon" />
+          <p class="side-info-font">Gesamtzeit ca. 10 Minuten</p>
+        </div>
+      </div>
+      <span class="span-font">
+        Blattsalat waschen, trocken schleudern und in eine Schüssel geben.
+        Gemüse schneiden: Tomate und Gurke in kleine Stücke schneiden, Zwiebel
+        in feine Ringe schneiden. Alles zum Salat geben. Dressing zubereiten:
+        Olivenöl, Balsamico-Essig, Senf, Salz und Pfeffer in einer kleinen
+        Schüssel verrühren. Anrichten: Dressing über den Salat geben, gut
+        vermengen. Feta-Käse zerbröseln und Croutons darüber streuen (falls
+        verwendet). Servieren: Sofort genießen!
+      </span>
+    </div>
+
+    <div>
+      <h4 class="receipt-fontsize">Rezept erstellt von</h4>
+      <div class="navkünstler">
+        <img class="profile" src="img/profile.png" alt="Bild des Erstellers" />
+        <span class="name">Tim Draaijer</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="./index.html"><img class="footer-logo" src="./img/logowhite.png" alt="Unser Logo" /></a>
+      <a href="https://www.instagram.com/" target="_blank"><img class="footer-social" src="./img/instagram_white.png"
+          alt="Insta Logo" /></a>
+    </div>
+  </footer>
+</body>
+
 </html>
