@@ -1,6 +1,7 @@
 header {
   box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.2);
 }
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -318,6 +319,7 @@ nav {
   justify-content: end;
   align-items: end;
 }
+
 nav ul {
   list-style: none;
   float: left;
@@ -325,6 +327,7 @@ nav ul {
   display: flex;
   justify-content: end;
 }
+
 nav ul li {
   float: left;
   text-align: center;
@@ -333,43 +336,54 @@ nav ul li {
 #navigation {
   opacity: 0;
 }
-#navigation:checked ~ ul {
+
+#navigation:checked~ul {
   display: block;
 }
-#navigation:checked ~ label .burgericon {
+
+#navigation:checked~label .burgericon {
   margin-top: 15px;
 }
-#navigation:checked ~ label .burgericon div:first-of-type {
+
+#navigation:checked~label .burgericon div:first-of-type {
   rotate: 45deg;
 }
-#navigation:checked ~ label .burgericon div:last-child {
+
+#navigation:checked~label .burgericon div:last-child {
   rotate: -45deg;
   margin-top: -10px;
 }
-#navigation:checked ~ label .burgericon div:nth-child(2) {
+
+#navigation:checked~label .burgericon div:nth-child(2) {
   display: none;
 }
+
 .margin-infos-ig {
   margin-left: 24px;
   margin-right: 24px;
 }
+
 .h4-preparation {
   margin-bottom: -3px;
   padding-top: 8px;
   color: #000000ad;
 }
+
 .table-container {
   margin-top: 64px;
 }
+
 .portions-input {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
   padding-top: 8px;
 }
+
 .portions {
   padding-right: 24px;
 }
+
 .buttoninput {
   height: 37px;
   margin: 0;
@@ -378,6 +392,7 @@ nav ul li {
   outline: none;
   width: 164px;
 }
+
 .portionen {
   height: 42px;
   width: 130px;
@@ -387,11 +402,13 @@ nav ul li {
   margin: 0;
   border: none;
 }
+
 .button-input {
   padding-left: 24px;
   text-align: center;
   display: flex;
 }
+
 hr {
   border-top: 1px solid rgb(235, 235, 235);
   border-width: 1px;
@@ -401,42 +418,52 @@ hr {
   font-size: 16px;
   color: rgb(99 99 99);
 }
+
 .ig {
   border-radius: 10px;
   padding: 5px 17px;
   background-color: rgb(235, 235, 235);
 }
+
 .navkünstler {
   padding-top: 10px;
   gap: 18px;
 }
+
 .name {
   padding-left: 20px;
   color: grey;
   font-size: 24px;
 }
+
 .just-padding {
   padding: 144px;
   margin-top: 131px;
 
   background-color: rgb(99 99 99);
 }
+
 .receipt-fontsize {
   font-size: 18px;
   color: #000000ad;
 }
+
 h4 {
   margin-bottom: 10px;
 }
+
 footer {
   background-color: #000000cc;
 }
+
 .footer-logo {
   height: 64px;
 }
+
 .footer-social {
   height: 36px;
 }
+
 .contact-section {
   padding-bottom: 270px;
   padding-top: 250px;
@@ -445,6 +472,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 .kontaktmain {
   background-color: #75757530;
   padding: 16px;
@@ -452,42 +480,54 @@ footer {
   display: flex;
   border-radius: 20px;
 }
+
 .button {
   color: white;
   background-color: rgb(0, 128, 0);
   padding: 10px 50px;
   text-decoration: none;
 }
+
 .button-padding {
   margin-top: 70px;
 }
+
 .bratkartoffelntex {
   margin: 0;
   color: rgb(128, 128, 128);
   font-size: 16px;
   font-weight: 400;
 }
+
 h2 {
   font-weight: 600;
   padding-top: 32px;
 }
+
 .just-padding-start {
   padding: 144px;
   margin-top: 81px;
 
   background-color: rgb(99 99 99);
 }
+
 .infos {
   align-items: center;
 }
+
 .side-info-font {
   margin: 0;
 }
+
 .page-wrapper {
   width: 1920px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
+
 .footer-content {
   max-width: 1680px;
   margin: 0 auto;
@@ -509,6 +549,7 @@ h2 {
     font-size: 14px;
     margin-left: 0;
   }
+
   .bratkartoffelntext {
     gap: 20px;
     align-items: center;
@@ -546,16 +587,19 @@ h2 {
     margin-right: 0;
   }
 }
+
 @media (max-width: 992px) {
   .wasistbesser {
     padding: 1px;
     text-align: center;
   }
+
   .abstand {
     font-size: 14px;
     margin-right: 0;
     margin-top: 19px;
   }
+
   .gerichtsvorschlag {
     flex-direction: column;
     margin-left: 20px;
@@ -630,22 +674,27 @@ h2 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
   .insta {
     width: 120px;
     height: 120px;
     justify-content: center;
   }
+
   .lustaufwasneues {
     padding-bottom: 20px;
     font-size: 19px;
     font-weight: 500px;
   }
+
   .bratkartoffelnimg {
     margin-left: 0;
   }
+
   .footer-content {
     padding: 27px 58px;
   }
+
   .contact-section {
     padding-top: 170px;
   }
@@ -656,14 +705,17 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+
   header nav {
     align-items: center;
   }
+
   nav ul li {
     width: 100%;
     padding: 15px 0px;
     justify-content: center;
   }
+
   nav ul {
     display: none;
     justify-content: center;
@@ -674,6 +726,7 @@ h2 {
     height: 30px;
     display: none;
   }
+
   .burgericon div {
     width: 90%;
     margin: 7px 5%;
@@ -684,94 +737,120 @@ h2 {
   .burgericon {
     display: block;
   }
+
   .pizzaimg {
     margin-bottom: 24px;
   }
 }
+
 @media (max-width: 660px) {
   .footer-logo {
     height: 54px;
   }
+
   .footer-social {
     height: 31px;
   }
+
   .footer-content {
     padding: 24px 32px;
   }
+
   .contact-section {
     padding-top: 150px;
   }
+
   .inputfeld {
     width: 412px;
   }
 }
+
 @media (max-width: 540px) {
   h2 {
     font-size: 20px;
     padding-top: 20px;
   }
+
   .abstand {
     font-size: 14px;
   }
+
   .pizzaimg {
     margin-bottom: 10px;
     width: 200px;
     height: 200px;
   }
+
   .bratkartoffelnimg {
     margin-left: 0;
   }
+
   .h2-font {
     font-size: 22px;
     padding-top: 32px;
   }
+
   .gerichte {
     padding: 28px;
   }
+
   .first-container {
     text-align: center;
   }
+
   .h1-position {
     font-size: 24px;
     margin-bottom: 28px;
     text-align: center;
   }
+
   .infos {
     margin-top: 8px;
   }
+
   .ig {
     padding: 6px 10px;
   }
+
   .side-info-font {
     margin: 0;
     font-size: 14px;
   }
+
   .rezeptimg {
     height: 130px;
   }
+
   .button-padding {
     margin-top: 56px;
     margin-bottom: 20px;
   }
+
   .contact-section {
     padding-bottom: 92px;
   }
+
   .messagefeld {
     height: 195px;
   }
+
   h3 {
     font-size: 21px;
     margin-bottom: 24px;
   }
+
   .inputfeld {
     width: 270px;
   }
+
   .contact-section {
     padding-top: 64px;
   }
+
   .kontaktmain {
     padding: 12px;
   }
+
   h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -787,70 +866,89 @@ h2 {
     width: 250px;
     height: auto;
   }
+
   .infos {
     align-items: center;
     text-align: center;
   }
+
   .table-container {
     margin-top: 24px;
   }
+
   .buttoninput {
     width: 100px;
     height: 29px;
   }
+
   .portionen {
     height: 34px;
     width: 94px;
   }
+
   td {
     padding: 18px;
   }
+
   .ingredient-color {
     font-size: 11px;
   }
+
   .button-input {
     padding-left: 11px;
   }
+
   td {
     font-size: 16px;
   }
+
   .icons {
     width: 13px;
     height: 13px;
   }
+
   .side-info-font {
     font-size: 9px;
   }
+
   .margin-infos-ig {
     margin-left: 0;
     margin-right: 0;
   }
+
   .h4-preparation {
     margin-right: 28px;
     font-size: 20px;
   }
+
   .span-font {
     font-size: 14px;
   }
+
   .name {
     padding-left: 10px;
     font-size: 18px;
   }
+
   .profile {
     width: 80px;
     height: 80px;
   }
+
   .receipt-fontsize {
     font-size: 20px;
     margin-top: 42px;
     margin-bottom: 20px;
   }
+
   .footer-content {
     padding: 22px 16px;
   }
+
   .footer-logo {
     height: 42px;
   }
+
   .footer-social {
     height: 25px;
   }
@@ -861,23 +959,29 @@ h2 {
     font-size: 16px;
     padding-top: 18px;
   }
+
   .abstand {
     font-size: 14px;
   }
+
   .pizzaimg {
     margin-bottom: 16px;
   }
+
   .bratkartoffelntext {
     gap: 0;
     padding-left: 0;
   }
+
   .bratkartoffelnimg {
     margin-left: 0;
   }
+
   .gerichtsvorschlag {
     margin: 54px 20px;
   }
 }
+
 @media (max-width: 490px) {
   .ig {
     padding: 4px 10px;
