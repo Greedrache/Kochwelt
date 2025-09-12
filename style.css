@@ -540,6 +540,24 @@ h2 {
   padding: 27px 130px;
 }
 
+.sendmail {
+  background-color: #75757530;
+    padding: 16px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    width: 884px;
+    height: 224px;
+    margin: 42px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sendmail-container {
+    display: flex;
+    justify-content: center;
+  }
+
 @media (max-width: 1300px) {
   header {
     font-size: 20px;
