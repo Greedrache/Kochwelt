@@ -204,6 +204,7 @@ h3 {
   margin-left: 180px;
   margin-right: 180px;
   margin-top: 80px;
+  max-width: 1600px;
 }
 
 .rezeptimg {
@@ -219,12 +220,14 @@ h3 {
   margin-right: 200px;
   margin-top: 80px;
   margin-bottom: 80px;
+  max-width: 1600px;
 }
 
 .profile {
   border-radius: 400px;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 
 .navkünstler {
@@ -985,6 +988,17 @@ h2 {
 @media (max-width: 490px) {
   .ig {
     padding: 4px 10px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .impressummain {
+    margin: auto;
+    padding-top: 80px;
+  }
+  .rezeptmain {
+    margin: auto;
+    padding-top: 80px;
   }
 }
 
