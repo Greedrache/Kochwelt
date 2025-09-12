@@ -9,9 +9,18 @@ function showError(message) {
 
 function validatePortions() {
     const portionsInput = document.getElementById('portions');
-    let portions = parseInt(portionsInput.value) || 1;
-    
-    if (portions < 1 || isNaN(portions)) {
+    const inputValue = portionsInput.value.trim(); // Wert ohne Leerzeichen
+    let portions = parseInt(inputValue);
+
+    // Prüfen, ob das Feld leer ist oder keine gültige Zahl enthält
+    if (inputValue === '' || isNaN(portions)) {
+        showError('Bitte gib eine Zahl ein.');
+        portionsInput.value = 1; // Standardwert setzen
+        return false;
+    }
+
+    // Prüfen, ob die Portionen negativ oder null sind
+    if (portions < 1) {
         showError('Portionen können nicht negativ sein. Mindestens 1 Portion.');
         portionsInput.value = 1;
         return false;
@@ -20,7 +29,7 @@ function validatePortions() {
         portionsInput.value = 5;
         return false;
     }
-    
+
     document.getElementById('error-message').style.display = 'none';
     return true;
 }
